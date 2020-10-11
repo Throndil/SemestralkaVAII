@@ -1,0 +1,122 @@
+
+body{
+
+    margin: 0 auto;
+    background: url("base_background.jpg") no-repeat ;
+    background-size: cover;
+    text-align: center;
+
+}
+
+
+
+header
+{
+
+    display: inline-block;
+    float: right;
+
+
+}
+
+header .vyber{
+
+
+
+    background-color: black;
+    color: white;
+    font-size: 2.5em;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 0em 2.105em;  /* Vnutorne odsadenie textu,prve oznacuje vysku//height a druhe oznacuje sirku//width  */
+    margin-top: -3em;
+
+}
+
+
+.dropdown:hover ul li {
+
+    display: block;
+    transition: .8s ease;
+
+}
+
+.dropdown:hover .vyber {
+
+    color: gray;
+
+}
+
+                                                        /*@TODO: Ak ostane cas a nalada tak dorobit aby sa aj dropdown menu urobilo transition background ako pri jeho objektoch*/
+header ul{
+
+background-color: blue;
+position: absolute;
+margin: 0 auto;
+padding: 0em;
+
+
+
+}
+
+
+header li{
+
+   background-color: darkgray;
+   display: none;
+    padding: 0.5em 1.5em;                   /* Vnutorne odsadenie textu,prve oznacuje vysku//height a druhe oznacuje sirku//width  */
+    border: 1px solid black;
+    text-align: center;
+    transition: .8s ease;
+
+
+}
+
+header li:hover{
+
+background-color: white;
+
+]}
+
+header li a{
+
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+
+
+}
+
+.kontajner {
+
+    margin-bottom: 8em;
+    padding-top: 2.1em;
+    text-align: center;
+
+}
+
+
+.page_content {
+
+
+    background-color: rgba(255,255,255,0.4);
+    font-size: 1.5em;
+    margin: 0 auto;
+    width: 74%;
+    border: 5px solid black;
+
+}
+
+
+.footer
+{
+    color: gray;
+    background-color: black;
+    position: fixed;
+    display: block;
+    text-align: right;
+    bottom: 0;
+    width: 100%;
+
+
+}
