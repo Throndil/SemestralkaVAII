@@ -41,7 +41,7 @@ header .vyber{
 
 }
 
-.dropdown:hover .vyber {
+.dropdown:hover .vyber , .dropdown:active .vyber {
 
     color: gray;
 
@@ -71,7 +71,7 @@ header .activepage{
 
     background-color: rgba(255,255,255,0.4);
     font-size: 1.5em;
-    margin: 0 auto;
+    margin: 1em auto 0;
     width: 74%;
     border: 5px solid black;
     height: 100%;
@@ -92,7 +92,7 @@ header .activepage{
 
 .page_content .obrazok_autora{
 
-        width: 20em;
+        width: 50%;
 
 }
 
@@ -112,7 +112,8 @@ header .activepage{
 
 .page_content .obal_textu p{
 
-          text-align: left;
+          text-align: justify;
+
 
 }
 
@@ -145,7 +146,7 @@ header li:hover{
 
 background-color: white;
 
-]}
+}
 
 header li a{
 
@@ -162,7 +163,9 @@ header li a{
     padding-top: 2.1em;
     text-align: center;
     height: 100%;
+
 }
+
 
 
 .welcome_page_content {
@@ -190,14 +193,16 @@ header li a{
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
 
     .page_content .obal_textu{
-        display: flex;
-        width: 100%;
+        display:  block;
+        width: 80%;
+        margin: 0 auto;
 
     }
     .obal_rasy{
+
 
         display: block;
 
@@ -209,10 +214,84 @@ header li a{
         margin: 0 auto;
 
     }
+    .page_content .obal_textu p {
+
+        text-align: left;
+
+
+    }
+
+    .welcome_page_content img{
+
+        width: 100%;
+
+    }
+
+
+    .kontajner{
+
+        width: 85%;
+        margin: 0 auto;
+
+    }
+
+    .kontajner h1{
+
+        font-size: 100%;
+
+
+    }
+    .page_content .galaxy_map_image{
+
+       max-width: 80%;
+
+
+    }
+
+
+    .page_content{
+
+        width: 80%;
+
+
+    }
+
+
+
+
+
+    }
+
+
+
+@media screen and (max-width: 600px) {
+
+    header {
+
+        float: unset;
+
+    }
+
+    header .vyber {
+
+        margin: 0 auto ;
+
+
+    }
+
+
+
+    .obal_rasy{
+
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: unset;
+        align-content: center;
+
+    }
 
 }
-
-
 
 
 
