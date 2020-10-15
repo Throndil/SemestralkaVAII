@@ -2,7 +2,7 @@
 body{
 
     margin: 0 auto;
-    background: url("base_background.jpg") no-repeat ;
+    background: url("base_background.jpg") no-repeat fixed ;
     background-size: cover;
     text-align: center;
 
@@ -28,7 +28,7 @@ header .vyber{
     font-size: 2.5em;
     border: 1px solid black;
     text-decoration: none;
-    padding: 0em 2.105em;  /* Vnutorne odsadenie textu,prve oznacuje vysku//height a druhe oznacuje sirku//width  */
+    padding: 0 2.105em;  /* Vnutorne odsadenie textu,prve oznacuje vysku//height a druhe oznacuje sirku//width  */
     margin-top: -3em;
 
 }
@@ -53,12 +53,81 @@ header ul{
 background-color: blue;
 position: absolute;
 margin: 0 auto;
-padding: 0em;
+padding: 0;
 
 
 
 }
 
+header .activepage{
+
+        color: gold;
+
+}
+
+
+.page_content {
+
+
+    background-color: rgba(255,255,255,0.4);
+    font-size: 1.5em;
+    margin: 0 auto;
+    width: 74%;
+    border: 5px solid black;
+    height: 100%;
+
+
+}
+
+.obal_rasy {
+
+    display: flex;
+    width: 100%;
+    margin-bottom: 2em;
+    justify-content: space-around;
+    align-content: center;
+
+
+}
+
+.page_content .obrazok_autora{
+
+        width: 20em;
+
+}
+
+.page_content .galaxy_map_image{
+
+        max-width: 40em;
+
+}
+
+.page_content .obal_textu{
+
+        display: inline-flex;
+        width: 40%;
+
+
+}
+
+.page_content .obal_textu p{
+
+          text-align: left;
+
+}
+
+.page_content .obal_textu img{
+
+        object-fit: contain;
+
+}
+
+.page_content .races_obrazky{
+
+    width: 100%;
+
+
+}
 
 header li{
 
@@ -92,18 +161,17 @@ header li a{
     margin-bottom: 8em;
     padding-top: 2.1em;
     text-align: center;
-
+    height: 100%;
 }
 
 
-.page_content {
+.welcome_page_content {
 
 
-    background-color: rgba(255,255,255,0.4);
     font-size: 1.5em;
     margin: 0 auto;
     width: 74%;
-    border: 5px solid black;
+
 
 }
 
@@ -120,3 +188,33 @@ header li a{
 
 
 }
+
+
+@media screen and (max-width: 1000px) {
+
+    .page_content .obal_textu{
+        display: flex;
+        width: 100%;
+
+    }
+    .obal_rasy{
+
+        display: block;
+
+
+    }
+    .page_content .races_obrazky {
+
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+}
+
+
+
+
+
+
+
