@@ -19,9 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Added chaos race">
+    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Etc">
+      <change afterPath="$PROJECT_DIR$/drukhari.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styl.css" beforeDir="false" afterPath="$PROJECT_DIR$/styl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/galaxy.html" beforeDir="false" afterPath="$PROJECT_DIR$/galaxy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/introduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/introduction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/races.html" beforeDir="false" afterPath="$PROJECT_DIR$/races.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/races_chaos.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/races_chaos.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +82,7 @@
       <workItem from="1602767641437" duration="670000" />
       <workItem from="1602768874217" duration="10983000" />
       <workItem from="1602885286813" duration="895000" />
+      <workItem from="1603650693637" duration="2291000" />
     </task>
     <task id="LOCAL-00001" summary="Responsivita na 80%">
       <created>1602780198899</created>
@@ -106,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602885812089</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Etc">
+      <created>1603650907281</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603650907281</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,13 +143,18 @@
     <MESSAGE value="Responsivita by mala byt na 100%" />
     <MESSAGE value="Responsivita + male drobnosti" />
     <MESSAGE value="Added chaos race" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added chaos race" />
+    <MESSAGE value="Etc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Etc" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602784147068">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1602784147068" />
+    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1603650878563">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1603650878563" />
     <state x="1142" y="598" key="Github.ShareDialog" timestamp="1602432605672">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
