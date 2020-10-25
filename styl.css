@@ -110,13 +110,31 @@ header .activepage{
 
 }
 
-.page_content .obal_textu p{
+.page_content .obal_meme{
 
-          text-align: justify;
-
+    display: inline-flex;
+    word-wrap: break-word;
+    word-break: break-all;
+    width: 80%;
+    text-align: left;
 
 }
 
+
+.page_content .obal_textu p{
+
+          text-align: justify;
+          word-wrap: break-word;
+        word-break: break-all;
+
+}
+.page_content h1{
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-all;
+
+}
 .page_content .obal_textu img{
 
         object-fit: contain;
@@ -129,7 +147,6 @@ header .activepage{
 
 
 }
-
 header li{
 
    background-color: darkgray;
