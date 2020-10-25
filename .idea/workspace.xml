@@ -19,14 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Etc">
-      <change afterPath="$PROJECT_DIR$/drukhari.png" afterDir="false" />
+    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Changed text to proper one&#10;Added the drukhari race">
+      <change afterPath="$PROJECT_DIR$/Space-Marine.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/god_emperor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terminator_walking.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/galaxy.html" beforeDir="false" afterPath="$PROJECT_DIR$/galaxy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/introduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/introduction.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/races.html" beforeDir="false" afterPath="$PROJECT_DIR$/races.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/races_chaos.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/races_chaos.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/war.html" beforeDir="false" afterPath="$PROJECT_DIR$/war.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +85,7 @@
       <workItem from="1602767641437" duration="670000" />
       <workItem from="1602768874217" duration="10983000" />
       <workItem from="1602885286813" duration="895000" />
-      <workItem from="1603650693637" duration="2291000" />
+      <workItem from="1603650693637" duration="3943000" />
     </task>
     <task id="LOCAL-00001" summary="Responsivita na 80%">
       <created>1602780198899</created>
@@ -119,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603650907281</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Changed text to proper one&#10;Added the drukhari race">
+      <created>1603656697386</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603656697386</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +154,8 @@
     <MESSAGE value="Responsivita + male drobnosti" />
     <MESSAGE value="Added chaos race" />
     <MESSAGE value="Etc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Etc" />
+    <MESSAGE value="Changed text to proper one&#10;Added the drukhari race" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed text to proper one&#10;Added the drukhari race" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602784147068">
