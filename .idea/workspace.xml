@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Responsivita + male drobnosti">
+    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Added chaos race">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/races.html" beforeDir="false" afterPath="$PROJECT_DIR$/races.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styl.css" beforeDir="false" afterPath="$PROJECT_DIR$/styl.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,12 +43,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ijVJFSFemeS06ZVXL89LSbHkMS" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -73,7 +76,7 @@
       <workItem from="1602509631688" duration="5302000" />
       <workItem from="1602767641437" duration="670000" />
       <workItem from="1602768874217" duration="10983000" />
-      <workItem from="1602885286813" duration="461000" />
+      <workItem from="1602885286813" duration="895000" />
     </task>
     <task id="LOCAL-00001" summary="Responsivita na 80%">
       <created>1602780198899</created>
@@ -96,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602784938859</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added chaos race">
+      <created>1602885812089</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602885812089</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,10 +125,12 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Responsivita na 80%" />
     <MESSAGE value="Responsivita by mala byt na 100%" />
     <MESSAGE value="Responsivita + male drobnosti" />
-    <option name="LAST_COMMIT_MESSAGE" value="Responsivita + male drobnosti" />
+    <MESSAGE value="Added chaos race" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added chaos race" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602784147068">
