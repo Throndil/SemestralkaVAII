@@ -47,7 +47,7 @@ header .vyber{
 
 }
 
-                                                        /*@TODO: Ak ostane cas a nalada tak dorobit aby sa aj dropdown menu urobilo transition background ako pri jeho objektoch*/
+
 header ul{
 
 background-color: blue;
@@ -125,7 +125,6 @@ header .activepage{
 
           text-align: justify;
           word-wrap: break-word;
-        word-break: break-all;
 
 }
 .page_content h1{
@@ -189,12 +188,17 @@ header li a{
 
 
     font-size: 1.5em;
-    margin: 0 auto;
-    width: 74%;
+    margin: 1em auto;
+    width: 75%;
 
 
 }
+.welcome_page_content img{
 
+
+    width: 70%;
+
+}
 
 .footer
 {
@@ -206,11 +210,10 @@ header li a{
     bottom: 0;
     width: 100%;
 
-
 }
 
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1800px) {
 
     .page_content .obal_textu{
         display:  block;
@@ -240,7 +243,8 @@ header li a{
 
     .welcome_page_content img{
 
-        width: 100%;
+
+        width: 70%;
 
     }
 
