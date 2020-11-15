@@ -19,10 +19,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Easter egg fixed">
+    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Fixed war page&#10;Fixed word breaking&#10;Fixed image responsivity">
+      <change afterPath="$PROJECT_DIR$/HTML/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scripts_php/DBConnector.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scripts_php/Functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scripts_php/signup_script.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styl.css" beforeDir="false" afterPath="$PROJECT_DIR$/styl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/war.html" beforeDir="false" afterPath="$PROJECT_DIR$/war.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Space-Marine.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base_background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/IMGS/base_background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drukhari.png" beforeDir="false" afterPath="$PROJECT_DIR$/IMGS/drukhari.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easter_egg.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/easter_egg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/galaxy.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/galaxy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/god_emperor.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/IMGS/god_emperor.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/introduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/introduction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/races.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/races.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/races_chaos.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/IMGS/races_chaos.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sly_marbo.gif" beforeDir="false" afterPath="$PROJECT_DIR$/IMGS/sly_marbo.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styl.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/styl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terminator_walking.gif" beforeDir="false" afterPath="$PROJECT_DIR$/IMGS/terminator_walking.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/war.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/war.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,14 +71,22 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="sql.rename.search.for.storage.occurrences" value="true" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Michael\PhpstormProjects\Semestralka VAII\CSS" />
+      <recent name="C:\Users\Michael\PhpstormProjects\Semestralka VAII\HTML" />
+      <recent name="C:\Users\Michael\PhpstormProjects\Semestralka VAII\IMGS" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Michael\PhpstormProjects\Semestralka VAII" />
     </key>
@@ -79,7 +105,15 @@
       <workItem from="1602768874217" duration="10983000" />
       <workItem from="1602885286813" duration="895000" />
       <workItem from="1603650693637" duration="6821000" />
-      <workItem from="1603711497121" duration="3273000" />
+      <workItem from="1603711497121" duration="3569000" />
+      <workItem from="1603726451177" duration="110000" />
+      <workItem from="1603781885206" duration="4323000" />
+      <workItem from="1604327727264" duration="40000" />
+      <workItem from="1605445066792" duration="5441000" />
+      <workItem from="1605450751499" duration="4000" />
+      <workItem from="1605450901635" duration="2150000" />
+      <workItem from="1605453063228" duration="42000" />
+      <workItem from="1605453114738" duration="6082000" />
     </task>
     <task id="LOCAL-00001" summary="Responsivita na 80%">
       <created>1602780198899</created>
@@ -151,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603711524617</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fixed war page&#10;Fixed word breaking&#10;Fixed image responsivity">
+      <created>1603714806858</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1603714806858</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,13 +221,22 @@
     <MESSAGE value="Changed text&#10;Text clarification&#10;Footer changed&#10;Added gif" />
     <MESSAGE value="Changed text&#10;Text clarification&#10;Added gif&#10;Easter egg" />
     <MESSAGE value="Easter egg fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Easter egg fixed" />
+    <MESSAGE value="Fixed war page&#10;Fixed word breaking&#10;Fixed image responsivity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed war page&#10;Fixed word breaking&#10;Fixed image responsivity" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602784147068">
+    <state x="987" y="343" key="#PHP" timestamp="1605447380485">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1602784147068" />
+    <state x="987" y="343" key="#PHP/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605447380485" />
+    <state x="872" y="358" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605456655587">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="358" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605456655587" />
+    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605448009245">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605448009245" />
     <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1603650878563">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -199,10 +249,34 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1068" y="405" key="Github.UntrackedFilesDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1602432611234" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1603711536529">
+    <state x="1114" y="623" key="NewPhpFileDialog" timestamp="1605452177248">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1603711536529" />
+    <state x="1114" y="623" key="NewPhpFileDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605452177248" />
+    <state x="1330" y="256" key="SettingsEditor" timestamp="1605456818413">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1330" y="256" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605456818413" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1603714811621">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1603714811621" />
+    <state x="1179" y="577" width="573" height="532" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605448723112">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1179" y="577" width="573" height="532" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605448723112" />
+    <state x="1158" y="587" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1605448713708">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1158" y="587" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605448713708" />
+    <state x="1716" y="520" width="408" height="355" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1605456071835">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1716" y="520" width="408" height="355" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605456071835" />
+    <state x="219" y="433" width="895" height="780" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1605456512458">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="219" y="433" width="895" height="780" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605456512458" />
     <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603661304362">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
