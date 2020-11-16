@@ -14,44 +14,46 @@ require_once 'Functions.php';
 
 if (emptyInputSignup($uname,$email,$passwd,$passwdRepeat) !== false){
 
-    header("location: ../HTML/signup.html?error=emptyinput");
+    header("location: ../HTML/signup.php?error=emptyinput");
     exit();
 }
 
 if (invalidUname($uname) !== false){
 
-    header("location: ../HTML/signup.html?error=invaliduname");
+    header("location: ../HTML/signup.php?error=invaliduname");
     exit();
 }
 
 if (invalidEmail($email) !== false){
 
-    header("location: ../HTML/signup.html?error=invalidemail");
+    header("location: ../HTML/signup.php?error=invalidemail");
     exit();
 }
 if (passwdMatch($passwd,$passwdRepeat) !== false){
 
-    header("location: ../HTML/signup.html?error=passwdnonmatch");
+    header("location: ../HTML/signup.php?error=passwdnonmatch");
     exit();
 }
 
 
-if (unameExists($conn, $uname) !== false){
+if (unameExists($conn, $uname,$uname) !== false){
 
-    header("location: ../HTML/signup.html?error=unameexists");
+    header("location: ../HTML/signup.php?error=unameexists");
     exit();
 }
+if (unameExists($conn, $email,$email) !== false){
 
+    header("location: ../HTML/signup.php?error=emailexists");
+    exit();
+}
 createUser($conn, $uname, $email , $passwd);
-
-
 
 
 }
 else
 {
 
-    header("location: ../HTML/signup.html?BADGATEWAY");
+    header("location: ../HTML/signup.php?BADGATEWAY");
     exit();
 
 }

@@ -29,17 +29,17 @@
 
     <header>
         <div class="dropdown">
-        <a class="vyber" href="index.html">Menu</a>
+        <a class="vyber" href="index.php">Menu</a>
 
 
             <ul>
-            <li><a href="introduction.html">Introduction</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="galaxy.html">The galaxy</a></li>
-            <li><a class="activepage" href="races.html">The races</a></li>
-            <li><a href="war.html">There's only war</a></li>
-                <li><a href="signup.html">Signup</a></li>
-                <li><a href="login.html">Log in</a></li>
+            <li><a href="introduction.php">Introduction</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="galaxy.php">The galaxy</a></li>
+            <li><a class="activepage" href="races.php">The races</a></li>
+            <li><a href="war.php">There's only war</a></li>
+
+                <?php include "../Scripts_php/changeLogout.php" ?>
             </ul>
 
         </div>
@@ -63,7 +63,7 @@
                 <p>
                     The Imperium was founded by the Emperor of Mankind, also called "The God-Emperor" and the "Master of Mankind", at the end of the Age of Strife, in the 30th Millennium AD. The Emperor, an immortal being born around the year 8,000 BC in central Anatolia on Old Earth, was the collective reincarnation of all the Human shamans who possessed true psychic abilities during the Paleolithic and Neolithic Ages.
                     Imbued with their combined psychic, physical and intellectual power, the Emperor was born an immortal being of unparalleled physical strength, psychic ability, charisma and intellect. The Emperor helped Humanity as a whole survive and prosper through the long millennia. In various eras
-                    <a href="easter_egg.html" style="text-decoration: none ">sly marbo</a> of Human history He intervened through various personas, some of them well-known historical personages, to guide Mankind, though such interventions were always brief and shrouded in legend and historical mystery.
+                    <a href="easter_egg.php" style="text-decoration: none ">sly marbo</a> of Human history He intervened through various personas, some of them well-known historical personages, to guide Mankind, though such interventions were always brief and shrouded in legend and historical mystery.
                     At the end of the Age of Strife in the 29th Millennium, the man who would become the Emperor finally took a direct, public, and permanent role in shaping the future of Humanity, believing that the damage done to the Human species by 5,000 years of terror, isolation and violence could not be reversed unless He openly guided Humanity as its leader.
 
                 </p>

@@ -29,17 +29,18 @@
 
 <header>
     <div class="dropdown">
-        <a class="vyber" href="index.html">Menu</a>
+        <a class="vyber" href="index.php">Menu</a>
 
 
         <ul>
-            <li><a href="introduction.html">Introduction</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="galaxy.html">The galaxy</a></li>
-            <li><a href="races.html">The races</a></li>
-            <li><a href="war.html">There's only war</a></li>
-            <li><a class="activepage" href="signup.html">Signup</a></li>
-            <li><a href="login.html">Log in</a></li>
+            <li><a href="introduction.php">Introduction</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="galaxy.php">The galaxy</a></li>
+            <li><a href="races.php">The races</a></li>
+            <li><a href="war.php">There's only war</a></li>
+
+            <?php include "../Scripts_php/changeLogout.php" ?>
+
         </ul>
 
     </div>
@@ -55,17 +56,27 @@
 
     <div class="page_content">
 
-        <form method="post" action="../Scripts_php/signup_script.php">
+        <form method="post" action="../Scripts_php/login_script.php">
             <label for="uname">Username:</label><br>
             <input type="text" id="uname" name="uname" ><br>
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email" ><br>
             <label for="passwd">Password:</label><br>
             <input type="password" id="passwd" name="passwd"><br>
-            <label for="passwdRe">Repeat Password:</label><br>
-            <input type="password" id="passwdRe" name="passwdRe"><br>
-            <input type="submit" name="submit" value="Submit">
+            <input type="submit" name="submit" value="Log in">
         </form>
+        <?php
+
+        if (isset($_GET["error"])){
+            if ($_GET["error"]=="nologin"){
+                echo "<p>You have put in the wrong login!</p>";
+            }
+            if ($_GET["error"]=="nologinPasswd"){
+                echo "<p>You have put in the wrong password!</p>";
+            }
+
+        }
+
+        ?>
+
 
 
     </div>
@@ -81,6 +92,7 @@
     <div class="footer">
 
         <p>
+            
             Author: Monke
             Contact: Monke.ape@gmail.com
 

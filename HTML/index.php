@@ -29,17 +29,16 @@
 
     <header>
         <div class="dropdown">
-        <a class="vyber" href="index.html">Menu</a>
+        <a class="vyber" href="index.php">Menu</a>
         
 
             <ul>
-            <li><a href="introduction.html">Introduction</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="galaxy.html">The galaxy</a></li>
-            <li><a href="races.html">The races</a></li>
-            <li><a href="war.html">There's only war</a></li>
-               <li><a href="signup.html">Signup</a></li>
-                <li><a href="login.html">Log in</a></li>
+            <li><a href="introduction.php">Introduction</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="galaxy.php">The galaxy</a></li>
+            <li><a href="races.php">The races</a></li>
+            <li><a href="war.php">There's only war</a></li>
+                <?php include "../Scripts_php/changeLogout.php" ?>
             </ul>
 
         </div>
