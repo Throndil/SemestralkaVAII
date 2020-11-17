@@ -185,5 +185,4 @@ if ($checkPasswd === false){
     header("location: ../HTML/index.php?loginSuccessfull");
     exit();
 }
-
 }

@@ -4,7 +4,6 @@ body{
     margin: 0 auto;
     background: url("../IMGS/base_background.jpg") no-repeat fixed ;
     background-size: cover;
-    text-align: center;
 
 }
 
@@ -64,12 +63,72 @@ header .activepage{
         color: gold;
 
 }
+.kontajner_profile_page{
 
+    margin-bottom: 8em;
+    padding-top: 2.1em;
+    height: 100%;
+
+}
+
+.kontajner {
+
+    margin-bottom: 8em;
+    padding-top: 2.1em;
+    text-align: center;
+    height: 100%;
+
+}
+
+.page_content_profile_page{
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.page_content_profile_left , .page_content_profile_middle , .page_content_profile_right{
+
+    margin: 1em auto;
+
+    width: 30%;
+
+}
+.page_content_profile_left{
+
+    width: 20%;
+
+
+}
+.page_content_profile_middle{
+
+    width: 60%;
+    text-align: left;
+    border: 5px solid black;
+}
+
+
+.page_content_profile_right{
+
+    width: 20%;
+    bottom: 0;
+
+}
+
+
+.profile_page_img{
+
+    margin-top: 1em;
+    margin-left: 1em;
+    width: 40%;
+
+
+}
 
 .page_content {
 
 
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(255,255,255,0.5);
     font-size: 1.5em;
     margin: 1em auto 0;
     width: 74%;
@@ -92,21 +151,21 @@ header .activepage{
 
 .page_content .obrazok_autora{
 
-        width: 50%;
+    width: 50%;
 
 }
 
 .page_content .galaxy_map_image{
 
-        max-width: 40em;
+    max-width: 40em;
 
 }
 
 .page_content .obal_textu{
 
-        display: inline-flex;
-        width: 40%;
-        text-align: left;
+    display: inline-flex;
+    width: 40%;
+    text-align: left;
 
 }
 
@@ -123,8 +182,8 @@ header .activepage{
 
 .page_content .obal_textu p{
 
-          text-align: justify;
-          word-wrap: break-word;
+    text-align: justify;
+    word-wrap: break-word;
 
 }
 .page_content h1{
@@ -136,7 +195,7 @@ header .activepage{
 }
 .page_content .obal_textu img{
 
-        object-fit: contain;
+    object-fit: contain;
 
 }
 
@@ -172,16 +231,6 @@ header li a{
 
 
 }
-
-.kontajner {
-
-    margin-bottom: 8em;
-    padding-top: 2.1em;
-    text-align: center;
-    height: 100%;
-
-}
-
 
 
 .welcome_page_content {

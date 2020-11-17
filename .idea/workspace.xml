@@ -19,22 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Added logout">
-      <change afterPath="$PROJECT_DIR$/Scripts_php/changeLogout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts_php/login_script.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts_php/logout_script.php" afterDir="false" />
+    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Profile page&#10;Change passwd page&#10;Delete user page&#10;Buttons for changing details">
+      <change afterPath="$PROJECT_DIR$/HTML/changePasswd.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/deleteUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/profilePage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IMGS/question_mark.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/about.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/easter_egg.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/easter_egg.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/galaxy.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/galaxy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/introduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/introduction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/races.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/races.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/signup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/war.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/war.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/styl.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/styl.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts_php/Functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/Functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts_php/signup_script.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/signup_script.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts_php/changeLogout.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/changeLogout.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +102,8 @@
       <workItem from="1605453063228" duration="42000" />
       <workItem from="1605453114738" duration="6978000" />
       <workItem from="1605536470140" duration="9138000" />
-      <workItem from="1605545672389" duration="1312000" />
+      <workItem from="1605545672389" duration="1338000" />
+      <workItem from="1605612899240" duration="16563000" />
     </task>
     <task id="LOCAL-00001" summary="Responsivita na 80%">
       <created>1602780198899</created>
@@ -195,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605459408257</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added logout">
+      <created>1605546990234</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1605546990234</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +228,8 @@
     <MESSAGE value="Fixed war page&#10;Fixed word breaking&#10;Fixed image responsivity" />
     <MESSAGE value="Added signup" />
     <MESSAGE value="Added logout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added logout" />
+    <MESSAGE value="Profile page&#10;Change passwd page&#10;Delete user page&#10;Buttons for changing details" />
+    <option name="LAST_COMMIT_MESSAGE" value="Profile page&#10;Change passwd page&#10;Delete user page&#10;Buttons for changing details" />
   </component>
   <component name="WindowStateProjectService">
     <state x="987" y="343" key="#PHP" timestamp="1605447380485">
@@ -254,18 +256,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1068" y="405" key="Github.UntrackedFilesDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1602432611234" />
-    <state x="1114" y="623" key="NewPhpFileDialog" timestamp="1605542502838">
+    <state x="1114" y="623" key="NewPhpFileDialog" timestamp="1605633258770">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1114" y="623" key="NewPhpFileDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605542502838" />
+    <state x="1114" y="623" key="NewPhpFileDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605633258770" />
     <state x="1330" y="256" key="SettingsEditor" timestamp="1605456818413">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1330" y="256" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605456818413" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1605459417005">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1605546994956">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605459417005" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605546994956" />
     <state x="1179" y="577" width="573" height="532" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605448723112">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
