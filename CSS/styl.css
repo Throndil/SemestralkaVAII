@@ -96,6 +96,8 @@ header .activepage{
 }
 .page_content_profile_left{
 
+    overflow: hidden;
+    margin-left: 1em;
     width: 20%;
 
 
@@ -103,13 +105,15 @@ header .activepage{
 .page_content_profile_middle{
 
     width: 60%;
-    text-align: left;
+    text-align: center;
     border: 5px solid black;
 }
 
 
 .page_content_profile_right{
 
+
+    margin-left: 1em;
     width: 20%;
     bottom: 0;
 
@@ -124,11 +128,16 @@ header .activepage{
 
 
 }
+.page_content_profile_right .deleteUserButton button{
 
+   overflow: hidden;
+    width: 80%;
+
+}
 .page_content {
 
 
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(190,185,194,0.5);
     font-size: 1.5em;
     margin: 1em auto 0;
     width: 74%;
@@ -261,6 +270,36 @@ header li a{
 
 }
 
+
+@media screen and (max-width: 1100px){
+
+    .page_content_profile_page{
+
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .page_content_profile_left, .page_content_profile_right{
+
+        width: 100%;
+
+
+    }
+
+    .page_content_profile_middle {
+
+        min-height: 5em;
+        width: calc(100% - 10px);
+
+    }
+
+
+
+
+
+
+
+}
 
 @media screen and (max-width: 1800px) {
 

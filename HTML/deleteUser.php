@@ -56,28 +56,16 @@
 
     <div class="page_content">
 
-        <form method="post" action="../Scripts_php/login_script.php">
-            <label for="uname">Username:</label><br>
-            <input type="text" id="uname" name="uname" ><br>
-            <label for="passwd">Password:</label><br>
-            <input type="password" id="passwd" name="passwd"><br>
-            <label for="passwdRe">Repeat Password:</label><br>
-            <input type="password" id="passwdRe" name="passwdRe"><br>
-            <input type="submit" name="submit" value="Delete account">
+        <form method="post" action="../Scripts_php/deleteUser.php">
+            <p>
+                Are you sure you want to delete your account?
+            </p>
+            <input type="submit" name="submitNo" value="No I changed my mind"><br>
+            <input type="submit" name="submitYes" value="Delete account">
         </form>
-        <?php
 
-        if (isset($_GET["error"])){
-            if ($_GET["error"]=="nologin"){
-                echo "<p>You have put in the wrong login!</p>";
-            }
-            if ($_GET["error"]=="nologinPasswd"){
-                echo "<p>You have put in the wrong password!</p>";
-            }
 
-        }
 
-        ?>
 
 
 

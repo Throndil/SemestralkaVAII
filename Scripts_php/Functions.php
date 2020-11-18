@@ -4,7 +4,7 @@
 function emptyInputSignup($uname,$email,$passwd,$passwdRepeat){
 
 
-if (empty($uname) || empty($email) || empty($passwd) || empty($passwdRepeat)){
+    if (empty($uname) || empty($email) || empty($passwd) || empty($passwdRepeat)){
 
     $result = true;
 
@@ -74,7 +74,6 @@ function unameExists($conn, $uname,$email){
 
     $sql = "SELECT * FROM users WHERE username = ? OR email = ? ;";
 
-
     if ($statement = mysqli_prepare($conn,$sql)){
     echo "";
 
@@ -103,19 +102,16 @@ function unameExists($conn, $uname,$email){
 
         }else{
 
-            $result = false;
-            return $result;
+            $return = false;
         }
 
 
     }else{
 
-        $result = false;
-        return $result;
+        $return = false;
     }
-
-
     mysqli_stmt_close($statement);
+    return $return;
 
 }
 function createUser($conn, $uname, $email , $passwd){
@@ -185,4 +181,156 @@ if ($checkPasswd === false){
     header("location: ../HTML/index.php?loginSuccessfull");
     exit();
 }
+}
+function fullNameExists($conn, $fullName, $uname){
+
+    $sql = "SELECT * FROM users WHERE fullName = ? AND username = ? ;";
+
+    if (($statement = mysqli_prepare($conn,$sql)) === false){
+
+        header("location: ../HTML/signup.php?badstatement");
+        exit();
+
+    }
+
+    mysqli_stmt_bind_param($statement, "ss",$fullName , $uname );
+
+    mysqli_stmt_execute($statement);
+
+    $dataResult = mysqli_stmt_get_result($statement);
+
+    if ($row = mysqli_fetch_assoc($dataResult)){
+        $return = true;
+
+
+    }else{
+        $return = false;
+
+    }
+    mysqli_stmt_close($statement);
+    return $return;
+
+}
+function changeUserData($conn, $userID,$newFirstname, $newLastName,$newUname,$newEmail){
+
+    if (!empty($newFirstname) && !empty($newLastName)){
+        if (empty($newFirstname) || empty($newLastName)){
+
+        header("location: ../HTML/profilePage.php?error=bothNamesRequired");
+        exit();
+
+
+         }else {
+            $fullName = $newFirstname . " " . $newLastName;
+            $sql = "UPDATE users SET fullName = ? WHERE userID = ? ;";
+
+            if (($statement = mysqli_prepare($conn, $sql)) === false) {
+
+                header("location: ../HTML/profilePage.php?badstatement");
+                exit();
+
+            }
+            mysqli_stmt_bind_param($statement, "ss",$fullName , $userID );
+            mysqli_stmt_execute($statement);
+            mysqli_stmt_close($statement);
+
+        }
+
+    }
+    if (!empty($newUname)){
+
+            if (unameExists($conn, $newUname,$newUname) === false){
+                $sql = "UPDATE users SET username = ? WHERE userID = ? ;";
+
+                if (($statement = mysqli_prepare($conn,$sql)) === false){
+
+                    header("location: ../HTML/profilePage.php?badstatement");
+                    exit();
+
+                }
+                mysqli_stmt_bind_param($statement, "ss",$newUname , $userID );
+                mysqli_stmt_execute($statement);
+                mysqli_stmt_close($statement);
+
+                $_SESSION["username"] = $newUname;
+
+            }else{
+
+                header("location: ../HTML/profilePage.php?error=usernameExists");
+                exit();
+
+
+            }
+
+
+
+    }
+    if (!empty($newEmail)){
+
+        if (!invalidEmail($newEmail)) {
+            if (unameExists($conn, $newEmail, $newEmail) === false) {
+                $sql = "UPDATE users SET email = ? WHERE userID = ? ;";
+
+                if (($statement = mysqli_prepare($conn, $sql)) === false) {
+
+                    header("location: ../HTML/profilePage.php?badstatement");
+                    exit();
+
+                }
+                mysqli_stmt_bind_param($statement, "ss", $newEmail, $userID);
+                mysqli_stmt_execute($statement);
+                mysqli_stmt_close($statement);
+
+
+            }else{
+
+                header("location: ../HTML/profilePage.php?error=emailExists");
+                exit();
+
+            }
+
+        }else{
+
+            header("location: ../HTML/profilePage.php?error=badEmail");
+            exit();
+
+
+        }
+    }if (empty($newFirstname) && empty($newLastName) && empty($newUname) && empty($newEmail)){
+
+        header("location: ../HTML/profilePage.php?error=noDataChanged");
+        exit();
+
+    }
+
+    header("location: ../HTML/profilePage.php?error=noError");
+    exit();
+
+}
+
+function deleteAccount($conn,$userID){
+
+    $sql = "DELETE FROM users WHERE userID = ? ;";
+
+
+    if (($statement = mysqli_prepare($conn, $sql)) === false) {
+
+        header("location: ../HTML/profilePage.php?badstatement");
+        exit();
+
+    }
+    mysqli_stmt_bind_param($statement, "s", $userID );
+    mysqli_stmt_execute($statement);
+    mysqli_stmt_close($statement);
+
+    session_start();
+    session_unset();
+    session_destroy();
+
+    header("location: ../HTML/index.php?accountDeleted");
+    exit();
+
+
+
+
 }
