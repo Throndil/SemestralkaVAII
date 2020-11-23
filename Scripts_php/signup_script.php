@@ -2,10 +2,10 @@
 
 if (isset($_POST['submit'])) {
 
-$uname = $_POST["uname"];
-$email = $_POST["email"];
-$passwd = $_POST["passwd"];
-$passwdRepeat = $_POST["passwdRe"];
+$uname = trim($_POST["uname"]);
+$email = trim($_POST["email"]);
+$passwd = trim($_POST["passwd"]);
+$passwdRepeat = trim($_POST["passwdRe"]);
 
 
 

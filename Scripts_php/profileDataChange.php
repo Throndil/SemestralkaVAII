@@ -9,10 +9,10 @@ if (isset($_SESSION["userID"]) && isset($_SESSION["username"])){
 
 
 
-    $newFirstname = $_POST["newFirstname"];
-    $newLastName = $_POST["newLastName"];
-    $newUname = $_POST["newUname"];
-    $newEmail = $_POST["newEmail"];
+    $newFirstname = trim($_POST["newFirstname"]);
+    $newLastName = trim($_POST["newLastName"]);
+    $newUname = trim($_POST["newUname"]);
+    $newEmail = trim($_POST["newEmail"]);
 
     changeUserData($conn, $_SESSION["userID"],$newFirstname, $newLastName,$newUname,$newEmail);
 

@@ -266,7 +266,6 @@ function changeUserData($conn, $userID,$newFirstname, $newLastName,$newUname,$ne
 
     }
     if (!empty($newEmail)){
-
         if (!invalidEmail($newEmail)) {
             if (unameExists($conn, $newEmail, $newEmail) === false) {
                 $sql = "UPDATE users SET email = ? WHERE userID = ? ;";

@@ -19,16 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Added change profile data&#10;Added delete account">
-      <change afterPath="$PROJECT_DIR$/Scripts_php/deleteUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts_php/profileDataChange.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts_php/profileUdajeVypisZmena.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts_php/vypisZDB.php" afterDir="false" />
+    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Minor changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/styl.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/styl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/deleteUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/deleteUser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/profilePage.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/profilePage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts_php/Functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/Functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts_php/profileDataChange.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/profileDataChange.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts_php/signup_script.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/signup_script.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +101,8 @@
       <workItem from="1605536470140" duration="9138000" />
       <workItem from="1605545672389" duration="1338000" />
       <workItem from="1605612899240" duration="18220000" />
-      <workItem from="1605710889184" duration="12623000" />
+      <workItem from="1605710889184" duration="12845000" />
+      <workItem from="1606151825132" duration="3701000" />
     </task>
     <task id="LOCAL-00001" summary="Responsivita na 80%">
       <created>1602780198899</created>
@@ -205,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605633532224</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added change profile data&#10;Added delete account">
+      <created>1605724153948</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1605724153949</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,13 +243,18 @@
     <MESSAGE value="Added logout" />
     <MESSAGE value="Profile page&#10;Change passwd page&#10;Delete user page&#10;Buttons for changing details" />
     <MESSAGE value="Added change profile data&#10;Added delete account" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added change profile data&#10;Added delete account" />
+    <MESSAGE value="Minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="987" y="343" key="#PHP" timestamp="1605447380485">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="987" y="343" key="#PHP/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605447380485" />
+    <state x="656" y="541" key="#SQL_Dialects" timestamp="1606158320038">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="656" y="541" key="#SQL_Dialects/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1606158320038" />
     <state x="872" y="358" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605456655587">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -274,10 +283,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1330" y="256" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605456818413" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1605633534828">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1605724159745">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605633534828" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605724159745" />
     <state x="1179" y="577" width="573" height="532" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605448723112">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

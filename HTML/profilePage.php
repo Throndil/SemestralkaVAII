@@ -103,8 +103,11 @@
                         if ($_GET["error"]=="noError"){
                             echo "<p>Data changed successfully!</p>";
                         }
-                        if ($_GET["error"]=="badEmail"){
+                        if ($_GET["error"]=="emailExists"){
                             echo "<p>Chosen email is already in use!</p>";
+                        }
+                        if ($_GET["error"]=="badEmail"){
+                            echo "<p>Chosen email is in a wrong format!</p>";
                         }
 
                     }
