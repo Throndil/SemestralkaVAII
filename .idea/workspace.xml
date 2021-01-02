@@ -19,33 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Minor changes">
-      <change afterPath="$PROJECT_DIR$/Scripts_php/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts_php/header.php" afterDir="false" />
+    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Changed header and footer to be as includes&#10;Minor changes">
+      <change afterPath="$PROJECT_DIR$/HTML/profileChangeData.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/styl.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/styl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/about.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/changePasswd.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/changePasswd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/deleteUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/deleteUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/easter_egg.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/easter_egg.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/galaxy.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/galaxy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/introduction.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/introduction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/profilePage.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/profilePage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/races.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/races.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/signup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/war.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/war.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts_php/DBConnector.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/DBConnector.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts_php/Functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/Functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts_php/changeLogout.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/changeLogout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts_php/deleteUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/deleteUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts_php/login_script.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/login_script.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts_php/logout_script.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/logout_script.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts_php/profileDataChange.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/profileDataChange.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts_php/profileUdajeVypisZmena.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/profileUdajeVypisZmena.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts_php/signup_script.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/signup_script.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts_php/vypisZDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/vypisZDB.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +104,7 @@
       <workItem from="1606151825132" duration="3734000" />
       <workItem from="1606158447055" duration="1232000" />
       <workItem from="1606201390407" duration="1580000" />
-      <workItem from="1609591977441" duration="2802000" />
+      <workItem from="1609591977441" duration="5515000" />
     </task>
     <task id="LOCAL-00001" summary="Responsivita na 80%">
       <created>1602780198899</created>
@@ -240,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606158325097</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Changed header and footer to be as includes&#10;Minor changes">
+      <created>1609597612655</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1609597612655</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +260,8 @@
     <MESSAGE value="Profile page&#10;Change passwd page&#10;Delete user page&#10;Buttons for changing details" />
     <MESSAGE value="Added change profile data&#10;Added delete account" />
     <MESSAGE value="Minor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor changes" />
+    <MESSAGE value="Changed header and footer to be as includes&#10;Minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed header and footer to be as includes&#10;Minor changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="987" y="343" key="#PHP" timestamp="1605447380485">
@@ -306,18 +292,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1068" y="405" key="Github.UntrackedFilesDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1602432611234" />
-    <state x="1114" y="623" key="NewPhpFileDialog" timestamp="1609596566373">
+    <state x="1114" y="623" key="NewPhpFileDialog" timestamp="1609597878927">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1114" y="623" key="NewPhpFileDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1609596566373" />
+    <state x="1114" y="623" key="NewPhpFileDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1609597878927" />
     <state x="1330" y="256" key="SettingsEditor" timestamp="1605456818413">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1330" y="256" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605456818413" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1606158329957">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1609597615404">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1606158329957" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1609597615404" />
     <state x="1179" y="577" width="573" height="532" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605448723112">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

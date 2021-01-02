@@ -1,4 +1,5 @@
 
+/*<editor-fold desc="Hlavne telo webu, background a size backgroundu">*/
 body {
 
     margin: 0 auto;
@@ -6,6 +7,7 @@ body {
     background-size: cover;
 
 }
+/*</editor-fold>*/
 
 
 header {
@@ -87,7 +89,6 @@ header .activepage {
 .page_content_profile_left, .page_content_profile_middle, .page_content_profile_right {
 
     margin: 1em auto;
-
     width: 30%;
 
 }
@@ -102,7 +103,7 @@ header .activepage {
 }
 
 .page_content_profile_middle {
-
+    background-color: rgba(190, 185, 194, 0.5);
     width: 60%;
     text-align: center;
     border: 5px solid black;
@@ -111,7 +112,7 @@ header .activepage {
 
 .page_content_profile_right {
 
-
+    text-align: center;
     margin-left: 1em;
     width: 20%;
     bottom: 0;
