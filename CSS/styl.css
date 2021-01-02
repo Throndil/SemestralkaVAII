@@ -10,6 +10,7 @@ body {
 /*</editor-fold>*/
 
 
+/*<editor-fold desc="Hlavny menu header">*/
 header {
 
     display: inline-block;
@@ -17,7 +18,9 @@ header {
 
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Vyber z hlavneho menu">*/
 header .vyber {
 
 
@@ -30,22 +33,28 @@ header .vyber {
     margin-top: -3em;
 
 }
+/*</editor-fold>*/
 
 
+/*<editor-fold desc="Hovernutie hlavneho dropdown menu">*/
 .dropdown:hover ul li {
 
     display: block;
     transition: .8s ease;
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Zobrazenie pri hovernuti v menu">*/
 .dropdown:hover .vyber, .dropdown:active .vyber {
 
     color: gray;
 
 }
+/*</editor-fold>*/
 
 
+/*<editor-fold desc="Dropdown hlavneho menu">*/
 header ul {
 
     background-color: blue;
@@ -55,13 +64,17 @@ header ul {
 
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Zvyraznenie pismen v menu">*/
 header .activepage {
 
     color: gold;
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Container pre udaje na profile">*/
 .kontajner_profile_page {
 
     margin-bottom: 8em;
@@ -69,7 +82,9 @@ header .activepage {
     height: 100%;
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Velky obalovaci container pre HTML">*/
 .kontajner {
 
     margin-bottom: 8em;
@@ -78,21 +93,27 @@ header .activepage {
     height: 100%;
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Container pre content profilu">*/
 .page_content_profile_page {
 
     display: flex;
     flex-direction: row;
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Nastavenie lavej,strednej,pravej casti profilu">*/
 .page_content_profile_left, .page_content_profile_middle, .page_content_profile_right {
 
     margin: 1em auto;
     width: 30%;
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Container pre lavu cast profilu">*/
 .page_content_profile_left {
 
     overflow: hidden;
@@ -101,15 +122,19 @@ header .activepage {
 
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Container pre strednu cast profilu">*/
 .page_content_profile_middle {
     background-color: rgba(190, 185, 194, 0.5);
     width: 60%;
     text-align: center;
     border: 5px solid black;
 }
+/*</editor-fold>*/
 
 
+/*<editor-fold desc="Container pre pravu cast profilu">*/
 .page_content_profile_right {
 
     text-align: center;
@@ -118,8 +143,10 @@ header .activepage {
     bottom: 0;
 
 }
+/*</editor-fold>*/
 
 
+/*<editor-fold desc="Container pre obrazok profilu">*/
 .profile_page_img {
 
     margin-top: 1em;
@@ -128,14 +155,18 @@ header .activepage {
 
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Tlacidlo delete ucet ">*/
 .page_content_profile_right .deleteUserButton button {
 
     overflow: hidden;
     width: 80%;
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Container pre page content a background">*/
 .page_content {
 
 
@@ -148,7 +179,9 @@ header .activepage {
 
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Container pre content na page rasy">*/
 .obal_rasy {
 
     display: flex;
@@ -159,19 +192,25 @@ header .activepage {
 
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Container pre obrazok autora na about page">*/
 .page_content .obrazok_autora {
 
     width: 50%;
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Container pre obrazok na the galaxy page">*/
 .page_content .galaxy_map_image {
 
     max-width: 40em;
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Container pre vseobecne zarovnanie textu">*/
 .page_content .obal_textu {
 
     display: inline-flex;
@@ -179,7 +218,9 @@ header .activepage {
     text-align: left;
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Container pre easter egg page">*/
 .page_content .obal_meme {
 
     display: inline-flex;
@@ -189,15 +230,19 @@ header .activepage {
     text-align: left;
 
 }
+/*</editor-fold>*/
 
 
+/*<editor-fold desc="Container pre zarovnanie paragrafov">*/
 .page_content .obal_textu p {
 
     text-align: justify;
     word-wrap: break-word;
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Container pre zarovnanie hlavneho headeru">*/
 .page_content h1 {
     width: 100%;
     text-align: center;
@@ -205,20 +250,26 @@ header .activepage {
     word-break: break-all;
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Zarovnanie obrazku pre obal textu">*/
 .page_content .obal_textu img {
 
     object-fit: contain;
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Nastavenie velkosti obrazok v races page">*/
 .page_content .races_obrazky {
 
     width: 100%;
 
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Zarovannie headeru">*/
 header li {
 
     background-color: darkgray;
@@ -230,13 +281,17 @@ header li {
 
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Zvyraznenie headeru na on hover">*/
 header li:hover {
 
     background-color: white;
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Vnutorne pismo headeru">*/
 header li a {
 
     text-decoration: none;
@@ -245,8 +300,10 @@ header li a {
 
 
 }
+/*</editor-fold>*/
 
 
+/*<editor-fold desc="Container pre prvotnu page">*/
 .welcome_page_content {
 
 
@@ -256,14 +313,18 @@ header li a {
 
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Nastavenie obrazku pre prvotnu page">*/
 .welcome_page_content img {
 
 
     width: 70%;
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Vseobecny footer">*/
 .footer {
     color: gray;
     background-color: black;
@@ -274,8 +335,10 @@ header li a {
     width: 100%;
 
 }
+/*</editor-fold>*/
 
 
+/*<editor-fold desc="Responsivita pre pixelaciu 1100 pre profile page">*/
 @media screen and (max-width: 1100px) {
 
     .page_content_profile_page {
@@ -300,7 +363,9 @@ header li a {
 
 
 }
+/*</editor-fold>*/
 
+/*<editor-fold desc="Responsivita pre pixelaciu 1800 pre menu a page content">*/
 @media screen and (max-width: 1800px) {
 
     .page_content .obal_textu {
@@ -371,8 +436,10 @@ header li a {
 
 
 }
+/*</editor-fold>*/
 
 
+/*<editor-fold desc="Responsivita pre pixelaciu 600 pre menu a obal rasy page">*/
 @media screen and (max-width: 600px) {
 
     header {
@@ -400,6 +467,7 @@ header li a {
     }
 
 }
+/*</editor-fold>*/
 
 
 
