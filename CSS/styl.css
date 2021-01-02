@@ -160,12 +160,74 @@ header .activepage {
 /*<editor-fold desc="Tlacidlo delete ucet ">*/
 .page_content_profile_right .deleteUserButton button {
 
+    border-radius: 12px;
     overflow: hidden;
     width: 80%;
+    background-color: #f44336;
 
 }
 /*</editor-fold>*/
 
+/*<editor-fold desc="Delete button on hover">*/
+.page_content_profile_right .deleteUserButton button:hover {
+
+
+    font-size: 24px;
+}
+/*</editor-fold>*/
+/*<editor-fold desc="Change user data button">*/
+.page_content_profile_right .changeUserDataButton button {
+    border-radius: 12px;
+    overflow: hidden;
+    width: 80%;
+    background-color: #73AD21;
+}
+/*</editor-fold>*/
+/*<editor-fold desc="Change user data button on hover">*/
+.page_content_profile_right .changeUserDataButton button:hover {
+
+    background-color: #73AD21;
+    font-size: 24px;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Signup fields">*/
+.page_content .signupField{
+    border-radius: 25px;
+    background: #73AD21;
+    font-size: 24px;
+    width: 40%;
+}
+/*</editor-fold>*/
+/*<editor-fold desc="Singup button">*/
+.page_content .signupButton{
+
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #008CBA;
+    font-size: 24px;
+}
+/*</editor-fold>*/
+/*<editor-fold desc="Login fields">*/
+.page_content .loginField{
+
+    border-radius: 25px;
+    background: #73AD21;
+    font-size: 24px;
+    width: 40%;
+
+}
+/*</editor-fold>*/
+/*<editor-fold desc="Login button">*/
+.page_content .loginButton{
+
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #008CBA;
+    font-size: 24px;
+
+}
+/*</editor-fold>*/
 /*<editor-fold desc="Container pre page content a background">*/
 .page_content {
 
@@ -177,6 +239,74 @@ header .activepage {
     border: 5px solid black;
     height: 100%;
 
+
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Submit button pre "No I changed my mind"">*/
+.page_content .dontDeleteButton{
+
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 12px;
+    font-size: 24px;
+
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Submit button pre "Delete my account"">*/
+.page_content .yesDeleteButton{
+
+    color: black;
+    background-color: #f44336;
+    border-radius: 8px;
+    font-size: 32px;
+
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Uprava fieldu na editaciu first name">*/
+.page_content_profile_middle .changeFirstNameField{
+
+    border-radius: 25px;
+    background: #73AD21;
+
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Uprava fieldu na editaciu last name">*/
+.page_content_profile_middle .changeLastNameField{
+
+    border-radius: 25px;
+    background: #73AD21;
+
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Uprava fieldu na editaciu username">*/
+.page_content_profile_middle .changeUsernameField{
+
+    border-radius: 25px;
+    background: #73AD21;
+
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="Uprava fieldu na editaciu emailu">*/
+.page_content_profile_middle .changeEmailField{
+
+    border-radius: 25px;
+    background: #73AD21;
+
+}
+/*</editor-fold>*/
+/*<editor-fold desc="Uprava buttonu na editaciu profile data">*/
+.page_content_profile_middle .changeProfileDataButton {
+
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 12px;
+    font-size: 24px;
 
 }
 /*</editor-fold>*/
@@ -323,6 +453,7 @@ header li a {
 
 }
 /*</editor-fold>*/
+
 
 /*<editor-fold desc="Vseobecny footer">*/
 .footer {

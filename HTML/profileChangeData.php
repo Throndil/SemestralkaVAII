@@ -28,19 +28,19 @@ include_once '../Scripts_php/header.php';
             <form method="post" action="../Scripts_php/profileDataChange.php">
 
                 <label for="newFirstname">New first name:</label><br>
-                <input type="text" id="newFirstname" name="newFirstname"><br>
+                <input class="changeFirstNameField" type="text" id="newFirstname" name="newFirstname"><br>
 
                 <label for="newLastName">New last name:</label><br>
-                <input type="text" id="newLastName" name="newLastName"><br>
+                <input class="changeLastNameField" type="text" id="newLastName" name="newLastName"><br>
 
                 <label for="newUname">New username:</label><br>
-                <input type="text" id="newUname" name="newUname"><br>
+                <input class="changeUsernameField" type="text" id="newUname" name="newUname"><br>
 
                 <label for="newEmail">New email:</label><br>
-                <input type="text" id="newEmail" name="newEmail"><br>
+                <input class="changeEmailField" type="text" id="newEmail" name="newEmail"><br>
 
 
-                <input type="submit" name="changeProfile" value="Change">
+                <input class="changeProfileDataButton" type="submit" name="changeProfile" value="Change">
 
                 <?php
 

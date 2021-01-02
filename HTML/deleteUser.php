@@ -11,8 +11,8 @@ include_once '../Scripts_php/header.php';
             <p>
                 Are you sure you want to delete your account?
             </p>
-            <input type="submit" name="submitNo" value="No I changed my mind"><br>
-            <input type="submit" name="submitYes" value="Delete account">
+            <input class="dontDeleteButton" type="submit" name="submitNo" value="No I changed my mind"><br>
+            <input class="yesDeleteButton" type="submit" name="submitYes" value="Delete account">
         </form>
 
 

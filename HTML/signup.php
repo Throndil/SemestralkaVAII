@@ -9,14 +9,14 @@ include_once '../Scripts_php/header.php';
 
         <form method="post" action="../Scripts_php/signup_script.php">
             <label for="uname">Username:</label><br>
-            <input type="text" id="uname" name="uname"><br>
+            <input class="signupField" type="text" id="uname" name="uname"><br>
             <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email"><br>
+            <input class="signupField" type="text" id="email" name="email"><br>
             <label for="passwd">Password:</label><br>
-            <input type="password" id="passwd" name="passwd"><br>
+            <input class="signupField" type="password" id="passwd" name="passwd"><br>
             <label for="passwdRe">Repeat Password:</label><br>
-            <input type="password" id="passwdRe" name="passwdRe"><br>
-            <input type="submit" name="submit" value="Submit">
+            <input class="signupField" type="password" id="passwdRe" name="passwdRe"><br>
+            <input class="signupButton" type="submit" name="submit" value="Submit">
         </form>
         <?php
 
