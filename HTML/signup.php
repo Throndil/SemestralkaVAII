@@ -3,11 +3,21 @@ include_once '../Scripts_php/header.php';
 ?>
 
 
+<script>
+    function validateForm() {
+        var x = document.forms["singupFrom"]["uname"].value;
+        if (x == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+    }
+</script>
+
 <div class="kontajner">
 
     <div class="page_content">
 
-        <form method="post" action="../Scripts_php/signup_script.php">
+        <form name="singupFrom" method="post" id="idForm" onsubmit="return validateForm()" action="../Scripts_php/signup_script.php">
             <label for="uname">Username:</label><br>
             <input class="signupField" type="text" id="uname" name="uname"><br>
             <label for="email">Email:</label><br>

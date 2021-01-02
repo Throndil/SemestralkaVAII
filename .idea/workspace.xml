@@ -19,13 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Added regions to .css file&#10;Minor changes">
+    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Added various changes to buttons and fields&#10;Minor changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/styl.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/styl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/deleteUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/deleteUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/profileChangeData.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/profileChangeData.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/profilePage.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/profilePage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/signup.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +102,7 @@
       <workItem from="1606151825132" duration="3734000" />
       <workItem from="1606158447055" duration="1232000" />
       <workItem from="1606201390407" duration="1580000" />
-      <workItem from="1609591977441" duration="11533000" />
+      <workItem from="1609591977441" duration="13915000" />
     </task>
     <task id="LOCAL-00001" summary="Responsivita na 80%">
       <created>1602780198899</created>
@@ -242,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609603195473</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added various changes to buttons and fields&#10;Minor changes">
+      <created>1609608631118</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1609608631118</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +282,8 @@
     <MESSAGE value="Changed header and footer to be as includes&#10;Minor changes" />
     <MESSAGE value="Changed profile data change to be its own .php file &#10;Minor changes" />
     <MESSAGE value="Added regions to .css file&#10;Minor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added regions to .css file&#10;Minor changes" />
+    <MESSAGE value="Added various changes to buttons and fields&#10;Minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added various changes to buttons and fields&#10;Minor changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="987" y="343" key="#PHP" timestamp="1605447380485">
@@ -319,10 +322,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1330" y="256" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605456818413" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1609603197858">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1609608632466">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1609603197858" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1609608632466" />
     <state x="1179" y="577" width="573" height="532" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605448723112">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
