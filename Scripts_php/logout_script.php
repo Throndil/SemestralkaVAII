@@ -1,8 +1,8 @@
 <?php
 
-    session_start();
-    session_unset();
-    session_destroy();
-    header("location: ../HTML/index.php?logoutSuccessfull");
-    exit();
+session_start();
+session_unset();
+session_destroy();
+header("location: ../HTML/index.php?logoutSuccessfull");
+exit();
 

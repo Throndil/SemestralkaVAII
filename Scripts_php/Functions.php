@@ -1,33 +1,15 @@
 <?php
 
 
-function emptyInputSignup($uname,$email,$passwd,$passwdRepeat){
-
-
-    if (empty($uname) || empty($email) || empty($passwd) || empty($passwdRepeat)){
-
-    $result = true;
-
-}
-else
+function emptyInputSignup($uname, $email, $passwd, $passwdRepeat)
 {
 
-    $result = false;
 
-}
-
-return $result;
-}
-function invalidUname($uname){
-
-
-    if (!preg_match("/^[a-zA-Z0-9]*$/", $uname)){
+    if (empty($uname) || empty($email) || empty($passwd) || empty($passwdRepeat)) {
 
         $result = true;
 
-    }
-    else
-    {
+    } else {
 
         $result = false;
 
@@ -36,16 +18,15 @@ function invalidUname($uname){
     return $result;
 }
 
-function invalidEmail($email){
+function invalidUname($uname)
+{
 
 
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
+    if (!preg_match("/^[a-zA-Z0-9]*$/", $uname)) {
 
         $result = true;
 
-    }
-    else
-    {
+    } else {
 
         $result = false;
 
@@ -53,16 +34,16 @@ function invalidEmail($email){
 
     return $result;
 }
-function passwdMatch($passwd,$passwdRepeat){
+
+function invalidEmail($email)
+{
 
 
-    if ($passwd !== $passwdRepeat){
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
         $result = true;
 
-    }
-    else
-    {
+    } else {
 
         $result = false;
 
@@ -70,43 +51,62 @@ function passwdMatch($passwd,$passwdRepeat){
 
     return $result;
 }
-function unameExists($conn, $uname,$email){
+
+function passwdMatch($passwd, $passwdRepeat)
+{
+
+
+    if ($passwd !== $passwdRepeat) {
+
+        $result = true;
+
+    } else {
+
+        $result = false;
+
+    }
+
+    return $result;
+}
+
+function unameExists($conn, $uname, $email)
+{
 
     $sql = "SELECT * FROM users WHERE username = ? OR email = ? ;";
 
-    if ($statement = mysqli_prepare($conn,$sql)){
-    echo "";
+    if ($statement = mysqli_prepare($conn, $sql)) {
+        echo "";
 
-    }else{
+    } else {
 
         header("location: ../HTML/signup.php?badstatement");
         exit();
 
     }
 
-    mysqli_stmt_bind_param($statement, "ss",$uname , $email);
+    mysqli_stmt_bind_param($statement, "ss", $uname, $email);
 
     mysqli_stmt_execute($statement);
 
     $dataResult = mysqli_stmt_get_result($statement);
 
-    if ($row = mysqli_fetch_assoc($dataResult)){
+    if ($row = mysqli_fetch_assoc($dataResult)) {
 
-        if($row["username"] !== NULL){
-
-            return $row;
-
-        }elseif($row["passwd"] !== NULL){
+        if ($row["username"] !== NULL) {
 
             return $row;
 
-        }else{
+        } elseif ($row["passwd"] !== NULL) {
+
+            return $row;
+
+        } else {
 
             $return = false;
         }
 
 
-    }else{
+    } else {
 
         $return = false;
     }
@@ -114,17 +114,19 @@ function unameExists($conn, $uname,$email){
     return $return;
 
 }
-function createUser($conn, $uname, $email , $passwd){
+
+function createUser($conn, $uname, $email, $passwd)
+{
 
     $sql = "INSERT INTO users (username,email,passwd) VALUES (? , ? , ? );";
 
 
-    if ($statement = mysqli_prepare($conn,$sql)){
+    if ($statement = mysqli_prepare($conn, $sql)) {
 
         echo "";
 
 
-    }else{
+    } else {
 
         header("location: ../HTML/signup.php?error=badstatement");
         exit();
@@ -134,7 +136,7 @@ function createUser($conn, $uname, $email , $passwd){
     $hashedPwd = password_hash($passwd, PASSWORD_DEFAULT);
 
 
-    mysqli_stmt_bind_param($statement, "sss",$uname, $email,$hashedPwd);
+    mysqli_stmt_bind_param($statement, "sss", $uname, $email, $hashedPwd);
 
     mysqli_stmt_execute($statement);
     mysqli_stmt_close($statement);
@@ -142,7 +144,8 @@ function createUser($conn, $uname, $email , $passwd){
     header("location: ../HTML/signup.php?error=noerror");
     exit();
 }
-function emptyInputLogin($uname,$passwd)
+
+function emptyInputLogin($uname, $passwd)
 {
 
 
@@ -157,53 +160,57 @@ function emptyInputLogin($uname,$passwd)
     }
     return $result;
 }
-function loginUser($conn,$uname,$passwd){
 
-$usernameExists = unameExists($conn, $uname , $uname);
+function loginUser($conn, $uname, $passwd)
+{
 
-if (print_r($usernameExists) < 1){
-    header("location: ../HTML/login.php?error=nologin");
-    exit();
+    $usernameExists = unameExists($conn, $uname, $uname);
+
+    if (print_r($usernameExists) < 1) {
+        header("location: ../HTML/login.php?error=nologin");
+        exit();
+    }
+
+    $passwdHash = $usernameExists["passwd"];
+
+    $checkPasswd = password_verify($passwd, $passwdHash);
+
+    if ($checkPasswd === false) {
+        header("location: ../HTML/login.php?error=nologinPasswd");
+        exit();
+    } else {
+
+        session_start();
+        $_SESSION["userID"] = $usernameExists["userID"];
+        $_SESSION["username"] = $usernameExists["username"];
+        header("location: ../HTML/index.php?loginSuccessfull");
+        exit();
+    }
 }
 
-$passwdHash = $usernameExists["passwd"];
-
-$checkPasswd = password_verify($passwd, $passwdHash);
-
-if ($checkPasswd === false){
-    header("location: ../HTML/login.php?error=nologinPasswd");
-    exit();
-}else{
-
-    session_start();
-    $_SESSION["userID"] = $usernameExists["userID"];
-    $_SESSION["username"] = $usernameExists["username"];
-    header("location: ../HTML/index.php?loginSuccessfull");
-    exit();
-}
-}
-function fullNameExists($conn, $fullName, $uname){
+function fullNameExists($conn, $fullName, $uname)
+{
 
     $sql = "SELECT * FROM users WHERE fullName = ? AND username = ? ;";
 
-    if (($statement = mysqli_prepare($conn,$sql)) === false){
+    if (($statement = mysqli_prepare($conn, $sql)) === false) {
 
         header("location: ../HTML/signup.php?badstatement");
         exit();
 
     }
 
-    mysqli_stmt_bind_param($statement, "ss",$fullName , $uname );
+    mysqli_stmt_bind_param($statement, "ss", $fullName, $uname);
 
     mysqli_stmt_execute($statement);
 
     $dataResult = mysqli_stmt_get_result($statement);
 
-    if ($row = mysqli_fetch_assoc($dataResult)){
+    if ($row = mysqli_fetch_assoc($dataResult)) {
         $return = true;
 
 
-    }else{
+    } else {
         $return = false;
 
     }
@@ -211,16 +218,18 @@ function fullNameExists($conn, $fullName, $uname){
     return $return;
 
 }
-function changeUserData($conn, $userID,$newFirstname, $newLastName,$newUname,$newEmail){
 
-    if (!empty($newFirstname) && !empty($newLastName)){
-        if (empty($newFirstname) || empty($newLastName)){
+function changeUserData($conn, $userID, $newFirstname, $newLastName, $newUname, $newEmail)
+{
 
-        header("location: ../HTML/profilePage.php?error=bothNamesRequired");
-        exit();
+    if (!empty($newFirstname) && !empty($newLastName)) {
+        if (empty($newFirstname) || empty($newLastName)) {
+
+            header("location: ../HTML/profilePage.php?error=bothNamesRequired");
+            exit();
 
 
-         }else {
+        } else {
             $fullName = $newFirstname . " " . $newLastName;
             $sql = "UPDATE users SET fullName = ? WHERE userID = ? ;";
 
@@ -230,42 +239,41 @@ function changeUserData($conn, $userID,$newFirstname, $newLastName,$newUname,$ne
                 exit();
 
             }
-            mysqli_stmt_bind_param($statement, "ss",$fullName , $userID );
+            mysqli_stmt_bind_param($statement, "ss", $fullName, $userID);
             mysqli_stmt_execute($statement);
             mysqli_stmt_close($statement);
 
         }
 
     }
-    if (!empty($newUname)){
+    if (!empty($newUname)) {
 
-            if (unameExists($conn, $newUname,$newUname) === false){
-                $sql = "UPDATE users SET username = ? WHERE userID = ? ;";
+        if (unameExists($conn, $newUname, $newUname) === false) {
+            $sql = "UPDATE users SET username = ? WHERE userID = ? ;";
 
-                if (($statement = mysqli_prepare($conn,$sql)) === false){
+            if (($statement = mysqli_prepare($conn, $sql)) === false) {
 
-                    header("location: ../HTML/profilePage.php?badstatement");
-                    exit();
-
-                }
-                mysqli_stmt_bind_param($statement, "ss",$newUname , $userID );
-                mysqli_stmt_execute($statement);
-                mysqli_stmt_close($statement);
-
-                $_SESSION["username"] = $newUname;
-
-            }else{
-
-                header("location: ../HTML/profilePage.php?error=usernameExists");
+                header("location: ../HTML/profilePage.php?badstatement");
                 exit();
 
-
             }
+            mysqli_stmt_bind_param($statement, "ss", $newUname, $userID);
+            mysqli_stmt_execute($statement);
+            mysqli_stmt_close($statement);
 
+            $_SESSION["username"] = $newUname;
+
+        } else {
+
+            header("location: ../HTML/profilePage.php?error=usernameExists");
+            exit();
+
+
+        }
 
 
     }
-    if (!empty($newEmail)){
+    if (!empty($newEmail)) {
         if (!invalidEmail($newEmail)) {
             if (unameExists($conn, $newEmail, $newEmail) === false) {
                 $sql = "UPDATE users SET email = ? WHERE userID = ? ;";
@@ -281,21 +289,22 @@ function changeUserData($conn, $userID,$newFirstname, $newLastName,$newUname,$ne
                 mysqli_stmt_close($statement);
 
 
-            }else{
+            } else {
 
                 header("location: ../HTML/profilePage.php?error=emailExists");
                 exit();
 
             }
 
-        }else{
+        } else {
 
             header("location: ../HTML/profilePage.php?error=badEmail");
             exit();
 
 
         }
-    }if (empty($newFirstname) && empty($newLastName) && empty($newUname) && empty($newEmail)){
+    }
+    if (empty($newFirstname) && empty($newLastName) && empty($newUname) && empty($newEmail)) {
 
         header("location: ../HTML/profilePage.php?error=noDataChanged");
         exit();
@@ -307,7 +316,8 @@ function changeUserData($conn, $userID,$newFirstname, $newLastName,$newUname,$ne
 
 }
 
-function deleteAccount($conn,$userID){
+function deleteAccount($conn, $userID)
+{
 
     $sql = "DELETE FROM users WHERE userID = ? ;";
 
@@ -318,7 +328,7 @@ function deleteAccount($conn,$userID){
         exit();
 
     }
-    mysqli_stmt_bind_param($statement, "s", $userID );
+    mysqli_stmt_bind_param($statement, "s", $userID);
     mysqli_stmt_execute($statement);
     mysqli_stmt_close($statement);
 
@@ -328,8 +338,6 @@ function deleteAccount($conn,$userID){
 
     header("location: ../HTML/index.php?accountDeleted");
     exit();
-
-
 
 
 }

@@ -1,16 +1,14 @@
 
-body{
+body {
 
     margin: 0 auto;
-    background: url("../IMGS/base_background.jpg") no-repeat fixed ;
+    background: url("../IMGS/base_background.jpg") no-repeat fixed;
     background-size: cover;
 
 }
 
 
-
-header
-{
+header {
 
     display: inline-block;
     float: right;
@@ -18,8 +16,7 @@ header
 
 }
 
-header .vyber{
-
+header .vyber {
 
 
     background-color: black;
@@ -27,7 +24,7 @@ header .vyber{
     font-size: 2.5em;
     border: 1px solid black;
     text-decoration: none;
-    padding: 0 2.105em;  /* Vnutorne odsadenie textu,prve oznacuje vysku//height a druhe oznacuje sirku//width  */
+    padding: 0 2.105em; /* Vnutorne odsadenie textu,prve oznacuje vysku//height a druhe oznacuje sirku//width  */
     margin-top: -3em;
 
 }
@@ -40,30 +37,30 @@ header .vyber{
 
 }
 
-.dropdown:hover .vyber , .dropdown:active .vyber {
+.dropdown:hover .vyber, .dropdown:active .vyber {
 
     color: gray;
 
 }
 
 
-header ul{
+header ul {
 
-background-color: blue;
-position: absolute;
-margin: 0 auto;
-padding: 0;
+    background-color: blue;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0;
 
 
+}
+
+header .activepage {
+
+    color: gold;
 
 }
 
-header .activepage{
-
-        color: gold;
-
-}
-.kontajner_profile_page{
+.kontajner_profile_page {
 
     margin-bottom: 8em;
     padding-top: 2.1em;
@@ -80,21 +77,22 @@ header .activepage{
 
 }
 
-.page_content_profile_page{
+.page_content_profile_page {
 
     display: flex;
     flex-direction: row;
 
 }
 
-.page_content_profile_left , .page_content_profile_middle , .page_content_profile_right{
+.page_content_profile_left, .page_content_profile_middle, .page_content_profile_right {
 
     margin: 1em auto;
 
     width: 30%;
 
 }
-.page_content_profile_left{
+
+.page_content_profile_left {
 
     overflow: hidden;
     margin-left: 1em;
@@ -102,7 +100,8 @@ header .activepage{
 
 
 }
-.page_content_profile_middle{
+
+.page_content_profile_middle {
 
     width: 60%;
     text-align: center;
@@ -110,7 +109,7 @@ header .activepage{
 }
 
 
-.page_content_profile_right{
+.page_content_profile_right {
 
 
     margin-left: 1em;
@@ -120,7 +119,7 @@ header .activepage{
 }
 
 
-.profile_page_img{
+.profile_page_img {
 
     margin-top: 1em;
     margin-left: 1em;
@@ -128,16 +127,18 @@ header .activepage{
 
 
 }
-.page_content_profile_right .deleteUserButton button{
 
-   overflow: hidden;
+.page_content_profile_right .deleteUserButton button {
+
+    overflow: hidden;
     width: 80%;
 
 }
+
 .page_content {
 
 
-    background-color: rgba(190,185,194,0.5);
+    background-color: rgba(190, 185, 194, 0.5);
     font-size: 1.5em;
     margin: 1em auto 0;
     width: 74%;
@@ -158,19 +159,19 @@ header .activepage{
 
 }
 
-.page_content .obrazok_autora{
+.page_content .obrazok_autora {
 
     width: 50%;
 
 }
 
-.page_content .galaxy_map_image{
+.page_content .galaxy_map_image {
 
     max-width: 40em;
 
 }
 
-.page_content .obal_textu{
+.page_content .obal_textu {
 
     display: inline-flex;
     width: 40%;
@@ -178,7 +179,7 @@ header .activepage{
 
 }
 
-.page_content .obal_meme{
+.page_content .obal_meme {
 
     display: inline-flex;
     word-wrap: break-word;
@@ -189,36 +190,39 @@ header .activepage{
 }
 
 
-.page_content .obal_textu p{
+.page_content .obal_textu p {
 
     text-align: justify;
     word-wrap: break-word;
 
 }
-.page_content h1{
+
+.page_content h1 {
     width: 100%;
     text-align: center;
     word-wrap: break-word;
     word-break: break-all;
 
 }
-.page_content .obal_textu img{
+
+.page_content .obal_textu img {
 
     object-fit: contain;
 
 }
 
-.page_content .races_obrazky{
+.page_content .races_obrazky {
 
     width: 100%;
 
 
 }
-header li{
 
-   background-color: darkgray;
-   display: none;
-    padding: 0.5em 1.5em;                   /* Vnutorne odsadenie textu,prve oznacuje vysku//height a druhe oznacuje sirku//width  */
+header li {
+
+    background-color: darkgray;
+    display: none;
+    padding: 0.5em 1.5em; /* Vnutorne odsadenie textu,prve oznacuje vysku//height a druhe oznacuje sirku//width  */
     border: 1px solid black;
     text-align: center;
     transition: .8s ease;
@@ -226,13 +230,13 @@ header li{
 
 }
 
-header li:hover{
+header li:hover {
 
-background-color: white;
+    background-color: white;
 
 }
 
-header li a{
+header li a {
 
     text-decoration: none;
     color: black;
@@ -251,15 +255,15 @@ header li a{
 
 
 }
-.welcome_page_content img{
+
+.welcome_page_content img {
 
 
     width: 70%;
 
 }
 
-.footer
-{
+.footer {
     color: gray;
     background-color: black;
     position: fixed;
@@ -271,15 +275,15 @@ header li a{
 }
 
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1100px) {
 
-    .page_content_profile_page{
+    .page_content_profile_page {
 
         flex-direction: column;
         overflow: hidden;
     }
 
-    .page_content_profile_left, .page_content_profile_right{
+    .page_content_profile_left, .page_content_profile_right {
 
         width: 100%;
 
@@ -294,34 +298,32 @@ header li a{
     }
 
 
-
-
-
-
-
 }
 
 @media screen and (max-width: 1800px) {
 
-    .page_content .obal_textu{
-        display:  block;
+    .page_content .obal_textu {
+        display: block;
         width: 80%;
         margin: 0 auto;
 
     }
-    .obal_rasy{
+
+    .obal_rasy {
 
 
         display: block;
 
 
     }
+
     .page_content .races_obrazky {
 
         width: 80%;
         margin: 0 auto;
 
     }
+
     .page_content .obal_textu p {
 
         text-align: left;
@@ -329,7 +331,7 @@ header li a{
 
     }
 
-    .welcome_page_content img{
+    .welcome_page_content img {
 
 
         width: 70%;
@@ -337,28 +339,29 @@ header li a{
     }
 
 
-    .kontajner{
+    .kontajner {
 
         width: 85%;
         margin: 0 auto;
 
     }
 
-    .kontajner h1{
+    .kontajner h1 {
 
         font-size: 100%;
 
 
     }
-    .page_content .galaxy_map_image{
 
-       max-width: 80%;
+    .page_content .galaxy_map_image {
+
+        max-width: 80%;
 
 
     }
 
 
-    .page_content{
+    .page_content {
 
         width: 80%;
 
@@ -366,11 +369,7 @@ header li a{
     }
 
 
-
-
-
-    }
-
+}
 
 
 @media screen and (max-width: 600px) {
@@ -383,14 +382,13 @@ header li a{
 
     header .vyber {
 
-        margin: 0 auto ;
+        margin: 0 auto;
 
 
     }
 
 
-
-    .obal_rasy{
+    .obal_rasy {
 
         display: block;
         width: 80%;
