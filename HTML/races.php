@@ -2,40 +2,54 @@
 include_once '../Scripts_php/header.php';
 include_once '../Scripts_php/DBConnector.php';
 
-$sql = "SELECT * FROM posts ;";
-
-$result = $conn->query($sql);
-
 ?>
 
 
 <div class="kontajner">
 
-    <div class="page_content">
+    <div class="page_content" id="load-Data">
 
-        <?php
-        while($parser = $result->fetch_assoc()):
-        ?>
 
-        <h1><?php echo $parser['postTitle'];  ?></h1>
+
+        <h1></h1>
         <div class="obal_rasy">
             <div class="obal_textu">
 
                 <p>
-                    <?php echo $parser['postContent']; ?>
+
 
                 </p>
 
 
             </div>
-            <div class="obal_textu obal_obrazku"><img class="races_obrazky" src="<?php echo $parser['postImagePath']; ?>"
+            <div class="obal_textu obal_obrazku"><img class="races_obrazky" src=""
                                                       alt="imperium_of_man" title="imperium_of_man"></div>
 
         </div>
 
-        <?php
-        endwhile;
-        ?>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                function loadData(page){
+                    $.ajax({
+                        url  : "../Scripts_php/paginationRequest.php",
+                        type : "POST",
+                        cache: false,
+                        data : {page_no:page},
+                        success:function(response){
+                            $("#load-Data").html(response);
+                        }
+                    });
+                }
+                loadData();
+
+                // Pagination code
+                $(document).on("click", ".pagination li a", function(e){
+                    e.preventDefault();
+                    var pageId = $(this).attr("id");
+                    loadData(pageId);
+                });
+            });
+        </script>
 
     </div>
 

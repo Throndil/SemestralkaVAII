@@ -15,7 +15,8 @@ header {
 
     display: inline-block;
     float: right;
-
+    padding: 0;
+    margin-top: -0.15em;
 
 }
 /*</editor-fold>*/
@@ -29,7 +30,7 @@ header .vyber {
     font-size: 2.5em;
     border: 1px solid black;
     text-decoration: none;
-    padding: 0 2.105em; /* Vnutorne odsadenie textu,prve oznacuje vysku//height a druhe oznacuje sirku//width  */
+    padding: 0 2.180em; /* Vnutorne odsadenie textu,prve oznacuje vysku//height a druhe oznacuje sirku//width  */
     margin-top: -3em;
 
 }
@@ -59,7 +60,7 @@ header ul {
 
     background-color: blue;
     position: absolute;
-    margin: 0 auto;
+    margin: -0.2em auto;
     padding: 0;
 
 
@@ -463,12 +464,13 @@ header li a {
 
 /*<editor-fold desc="Vseobecny footer">*/
 .footer {
+
     color: gray;
     background-color: black;
-    position: fixed;
+    position: absolute;
     display: block;
     text-align: right;
-    bottom: 0;
+    bottom: -4em;
     width: 100%;
 
 
@@ -576,7 +578,15 @@ header li a {
 
 
     }
+    .footer{
 
+        overflow: hidden;
+        height: 4.8%;
+        position: absolute;
+        bottom: 0;
+
+
+    }
 
 }
 /*</editor-fold>*/
@@ -613,7 +623,8 @@ header li a {
 
         overflow: hidden;
         height: 4.8%;
-
+        position: absolute;
+        bottom: 0;
 
 
     }

@@ -22,16 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Added simple javascript validation - needs work to be an array for all fields&#10;Minor changes">
+    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Simple javascript for profileText&#10;Dynamic profilePage&#10;Dynamic races">
+      <change afterPath="$PROJECT_DIR$/Scripts_php/paginationRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/styl.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/styl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/easter_egg.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/profileChangeData.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/profileChangeData.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/profilePage.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/profilePage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/races.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/races.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts_php/Functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/Functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts_php/profileDataChange.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/profileDataChange.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts_php/vypisZDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/vypisZDB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts_php/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +110,7 @@
       <workItem from="1606201390407" duration="1580000" />
       <workItem from="1609591977441" duration="14170000" />
       <workItem from="1609694214367" duration="1515000" />
-      <workItem from="1610713962235" duration="13542000" />
+      <workItem from="1610713962235" duration="18335000" />
     </task>
     <task id="LOCAL-00001" summary="Responsivita na 80%">
       <created>1602780198899</created>
@@ -263,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609612944004</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Simple javascript for profileText&#10;Dynamic profilePage&#10;Dynamic races">
+      <created>1610735571887</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1610735571887</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +306,8 @@
     <MESSAGE value="Added regions to .css file&#10;Minor changes" />
     <MESSAGE value="Added various changes to buttons and fields&#10;Minor changes" />
     <MESSAGE value="Added simple javascript validation - needs work to be an array for all fields&#10;Minor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added simple javascript validation - needs work to be an array for all fields&#10;Minor changes" />
+    <MESSAGE value="Simple javascript for profileText&#10;Dynamic profilePage&#10;Dynamic races" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simple javascript for profileText&#10;Dynamic profilePage&#10;Dynamic races" />
   </component>
   <component name="WindowStateProjectService">
     <state x="987" y="343" key="#PHP" timestamp="1605447380485">
@@ -334,10 +338,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1068" y="405" key="Github.UntrackedFilesDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1602432611234" />
-    <state x="1114" y="623" key="NewPhpFileDialog" timestamp="1610734240947">
+    <state x="1114" y="623" key="NewPhpFileDialog" timestamp="1610735984986">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1114" y="623" key="NewPhpFileDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610734240947" />
+    <state x="1114" y="623" key="NewPhpFileDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610735984986" />
     <state x="960" y="282" key="SettingsEditor" timestamp="1610734845604">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -346,10 +350,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="330" height="441" key="SqlResolveConfigurable/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610734844821" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1609612993993">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1610735687541">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1609612993993" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610735687541" />
     <state x="1179" y="577" width="573" height="532" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605448723112">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
