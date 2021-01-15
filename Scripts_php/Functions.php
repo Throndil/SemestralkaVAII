@@ -219,7 +219,7 @@ function fullNameExists($conn, $fullName, $uname)
 
 }
 
-function changeUserData($conn, $userID, $newFirstname, $newLastName, $newUname, $newEmail)
+function changeUserData($conn, $userID, $newFirstname, $newLastName, $newUname, $newEmail,$newProfileText)
 {
 
     if (!empty($newFirstname) && !empty($newLastName)) {
@@ -304,6 +304,26 @@ function changeUserData($conn, $userID, $newFirstname, $newLastName, $newUname, 
 
         }
     }
+
+    if(!empty($newProfileText)){
+
+        $sql = "UPDATE users SET profileText = ? WHERE userID = ? ;";
+
+        if (($statement = mysqli_prepare($conn, $sql)) === false) {
+
+            header("location: ../HTML/profilePage.php?badstatement");
+            exit();
+
+        }
+        mysqli_stmt_bind_param($statement, "ss", $newProfileText, $userID);
+        mysqli_stmt_execute($statement);
+        mysqli_stmt_close($statement);
+
+
+    }
+
+
+
     if (empty($newFirstname) && empty($newLastName) && empty($newUname) && empty($newEmail)) {
 
         header("location: ../HTML/profilePage.php?error=noDataChanged");

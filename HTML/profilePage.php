@@ -29,11 +29,13 @@ include_once '../Scripts_php/header.php';
         </div>
         <div class="page_content_profile_middle">
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut massa quis nulla tempor sollicitudin et
-                nec nunc. In facilisis, augue eu tempor semper, mauris ligula cursus risus, quis accumsan metus libero
-                at augue. Nulla gravida lobortis tellus a sollicitudin. Fusce in sapien nec leo aliquet vehicula.
-                Maecenas aliquam ut urna quis laoreet. Donec bibendum eros in ante facilisis eleifend. Aliquam erat
-                volutpat.
+            <p>
+
+                <?php
+
+                echo $profileText;
+
+                ?>
             </p>
 
 

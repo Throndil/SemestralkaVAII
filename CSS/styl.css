@@ -299,6 +299,12 @@ header .activepage {
     background: #73AD21;
 
 }
+textarea.resize-ta {
+    resize: none;
+    width: 60%;
+    height: 70%;
+
+}
 /*</editor-fold>*/
 /*<editor-fold desc="Uprava buttonu na editaciu profile data">*/
 .page_content_profile_middle .changeProfileDataButton {
@@ -465,6 +471,7 @@ header li a {
     bottom: 0;
     width: 100%;
 
+
 }
 /*</editor-fold>*/
 
@@ -490,6 +497,11 @@ header li a {
         min-height: 5em;
         width: calc(100% - 10px);
 
+    }
+    textarea .resize-ta{
+
+        min-height: 5em;
+        width: calc(100% - 10px);
     }
 
 
@@ -594,6 +606,15 @@ header li a {
         margin: 0 auto;
         justify-content: unset;
         align-content: center;
+
+    }
+
+    .footer{
+
+        overflow: hidden;
+        height: 4.8%;
+
+
 
     }
 

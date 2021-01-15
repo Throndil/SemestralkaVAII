@@ -12,8 +12,9 @@ if (isset($_SESSION["userID"]) && isset($_SESSION["username"])) {
     $newLastName = trim($_POST["newLastName"]);
     $newUname = trim($_POST["newUname"]);
     $newEmail = trim($_POST["newEmail"]);
+    $newProfileText = trim($_POST["newProfileText"]);
 
-    changeUserData($conn, $_SESSION["userID"], $newFirstname, $newLastName, $newUname, $newEmail);
+    changeUserData($conn, $_SESSION["userID"], $newFirstname, $newLastName, $newUname, $newEmail,$newProfileText);
 
 
 } else {

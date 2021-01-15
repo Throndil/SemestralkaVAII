@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,9 +22,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Added various changes to buttons and fields&#10;Minor changes">
+    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Added simple javascript validation - needs work to be an array for all fields&#10;Minor changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/styl.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/styl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/easter_egg.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/profileChangeData.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/profileChangeData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/profilePage.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/profilePage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/races.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/races.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts_php/Functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/Functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts_php/profileDataChange.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/profileDataChange.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts_php/vypisZDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/vypisZDB.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +66,9 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Scripts_php/vypisZDBPost.php" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="SQL Resolution Scopes" />
     <property name="sql.rename.search.for.storage.occurrences" value="true" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -102,7 +112,9 @@
       <workItem from="1606151825132" duration="3734000" />
       <workItem from="1606158447055" duration="1232000" />
       <workItem from="1606201390407" duration="1580000" />
-      <workItem from="1609591977441" duration="13915000" />
+      <workItem from="1609591977441" duration="14170000" />
+      <workItem from="1609694214367" duration="1515000" />
+      <workItem from="1610713962235" duration="13542000" />
     </task>
     <task id="LOCAL-00001" summary="Responsivita na 80%">
       <created>1602780198899</created>
@@ -244,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609608631118</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Added simple javascript validation - needs work to be an array for all fields&#10;Minor changes">
+      <created>1609612944004</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1609612944004</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +302,8 @@
     <MESSAGE value="Changed profile data change to be its own .php file &#10;Minor changes" />
     <MESSAGE value="Added regions to .css file&#10;Minor changes" />
     <MESSAGE value="Added various changes to buttons and fields&#10;Minor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added various changes to buttons and fields&#10;Minor changes" />
+    <MESSAGE value="Added simple javascript validation - needs work to be an array for all fields&#10;Minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added simple javascript validation - needs work to be an array for all fields&#10;Minor changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="987" y="343" key="#PHP" timestamp="1605447380485">
@@ -302,10 +322,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605448009245" />
-    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1603650878563">
+    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1610734657066">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1603650878563" />
+    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610734657066" />
     <state x="1142" y="598" key="Github.ShareDialog" timestamp="1602432605672">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -314,18 +334,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1068" y="405" key="Github.UntrackedFilesDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1602432611234" />
-    <state x="1114" y="623" key="NewPhpFileDialog" timestamp="1609597878927">
+    <state x="1114" y="623" key="NewPhpFileDialog" timestamp="1610734240947">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1114" y="623" key="NewPhpFileDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1609597878927" />
-    <state x="1330" y="256" key="SettingsEditor" timestamp="1605456818413">
+    <state x="1114" y="623" key="NewPhpFileDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610734240947" />
+    <state x="960" y="282" key="SettingsEditor" timestamp="1610734845604">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1330" y="256" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605456818413" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1609608632466">
+    <state x="960" y="282" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610734845604" />
+    <state width="330" height="441" key="SqlResolveConfigurable" timestamp="1610734844821">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1609608632466" />
+    <state width="330" height="441" key="SqlResolveConfigurable/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610734844821" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1609612993993">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1609612993993" />
     <state x="1179" y="577" width="573" height="532" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605448723112">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -338,10 +362,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1716" y="520" width="408" height="355" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605456071835" />
-    <state x="1023" y="493" width="895" height="780" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1605718448307">
+    <state x="1445" y="342" width="895" height="780" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1610733886772">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1023" y="493" width="895" height="780" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605718448307" />
+    <state x="1445" y="342" width="895" height="780" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610733886772" />
     <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603661304362">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -350,5 +374,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="983" y="338" key="run.anything.popup/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605544670910" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1610734552020">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610734552020" />
   </component>
 </project>

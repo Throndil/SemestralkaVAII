@@ -39,6 +39,7 @@ if (isset($_SESSION["userID"]) && isset($_SESSION["username"])) {
 
     $username = $dataFromDB["username"];
     $email = $dataFromDB["email"];
+    $profileText = $dataFromDB["profileText"];
 
 
 } else {
