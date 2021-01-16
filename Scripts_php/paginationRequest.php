@@ -49,7 +49,7 @@ if (mysqli_num_rows($result) > 0) {
 
     $totalPage = ceil($totalRecords/$limit);
 
-    $output.="<ul class='pagination justify-content-center' style='margin:20px 0'>";
+    $output.="<ul class='pagination justify-content-center' style='margin:20px 0' >";
 
     for ($i=1; $i <= $totalPage ; $i++) {
         if ($i == $page_no) {

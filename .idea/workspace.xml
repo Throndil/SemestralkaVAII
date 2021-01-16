@@ -22,12 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Simple javascript for profileText&#10;Dynamic profilePage&#10;Dynamic races">
-      <change afterPath="$PROJECT_DIR$/Scripts_php/paginationRequest.php" afterDir="false" />
+    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Pagination&#10;Responsivity">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/styl.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/styl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/races.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/races.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts_php/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts_php/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts_php/paginationRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/paginationRequest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +109,8 @@
       <workItem from="1606201390407" duration="1580000" />
       <workItem from="1609591977441" duration="14170000" />
       <workItem from="1609694214367" duration="1515000" />
-      <workItem from="1610713962235" duration="18335000" />
+      <workItem from="1610713962235" duration="18964000" />
+      <workItem from="1610807372770" duration="5078000" />
     </task>
     <task id="LOCAL-00001" summary="Responsivita na 80%">
       <created>1602780198899</created>
@@ -266,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610735571887</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Pagination&#10;Responsivity">
+      <created>1610740707721</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1610740707721</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +314,8 @@
     <MESSAGE value="Added various changes to buttons and fields&#10;Minor changes" />
     <MESSAGE value="Added simple javascript validation - needs work to be an array for all fields&#10;Minor changes" />
     <MESSAGE value="Simple javascript for profileText&#10;Dynamic profilePage&#10;Dynamic races" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simple javascript for profileText&#10;Dynamic profilePage&#10;Dynamic races" />
+    <MESSAGE value="Pagination&#10;Responsivity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pagination&#10;Responsivity" />
   </component>
   <component name="WindowStateProjectService">
     <state x="987" y="343" key="#PHP" timestamp="1605447380485">
@@ -350,10 +358,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="330" height="441" key="SqlResolveConfigurable/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610734844821" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1610735687541">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1610740709210">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610735687541" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610740709210" />
     <state x="1179" y="577" width="573" height="532" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605448723112">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

@@ -5,7 +5,7 @@
 
         <p>
             Author: Monke
-            Contact: Monke.ape@gmail.com
+            Contact: Monke.ape@mail.com
 
         </p>
 

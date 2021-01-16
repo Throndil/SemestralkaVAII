@@ -467,15 +467,35 @@ header li a {
 
     color: gray;
     background-color: black;
-    position: absolute;
-    display: block;
+    position: fixed;
     text-align: right;
-    bottom: -4em;
     width: 100%;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    margin-top: -100px;
+
 
 
 }
 /*</editor-fold>*/
+
+.pagination  a{
+
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd; /* Gray */
+    transition: background-color .3s;
+}
+ul.pagination li a {
+    margin: 0 2px; /* 0 is for top and bottom. Feel free to change it */
+    background-color: gray;
+}
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
 
 
 /*<editor-fold desc="Responsivita pre pixelaciu 1100 pre profile page">*/
@@ -581,11 +601,14 @@ header li a {
     .footer{
 
         overflow: hidden;
-        height: 4.8%;
-        position: absolute;
+        position: fixed;
         bottom: 0;
+        height: 2%;
 
+    }
 
+    .pagination {
+        font-size: 10pt;
     }
 
 }
@@ -622,9 +645,18 @@ header li a {
     .footer{
 
         overflow: hidden;
-        height: 4.8%;
-        position: absolute;
+        height: 2%;
         bottom: 0;
+        text-align: left;
+        font-size: small;
+
+
+    }
+    .pagination  {
+
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 8pt;
 
 
     }
