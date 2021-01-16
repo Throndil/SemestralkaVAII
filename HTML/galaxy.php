@@ -39,6 +39,8 @@ include_once '../Scripts_php/header.php';
         </p>
 
         <img class="galaxy_map_image" src="../IMGS/obrazok_galaxie.png" alt="obrazok_galaxie" title="obrazok_galaxie">
+
+
     </div>
 
 </div>
