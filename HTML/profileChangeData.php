@@ -40,7 +40,7 @@ include_once '../Scripts_php/header.php';
                 <input class="changeEmailField" type="text" id="newEmail" name="newEmail"><br>
 
                 <script>
-                    // Dealing with Input width
+
                     function autoGrow (oField) {
                         if (oField.scrollHeight > oField.clientHeight) {
                             oField.style.height = oField.scrollHeight + "px";
@@ -53,10 +53,9 @@ include_once '../Scripts_php/header.php';
                         widthMachine.innerHTML = el.value;
                     });
 
-                    // Dealing with Textarea Height
+
                     function calcHeight(value) {
                         let numberOfLineBreaks = (value.match(/\n/g) || []).length;
-                        // min-height + lines x line-height + padding + border
                         let newHeight = 20 + numberOfLineBreaks * 20 + 12 + 2;
                         return newHeight;
                     }

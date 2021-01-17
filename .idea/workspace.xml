@@ -22,13 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="User comments&#10;Responstivity">
-      <change afterPath="$PROJECT_DIR$/HTML/adminPageComments.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML/adminPageUsers.php" afterDir="false" />
+    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Admin&#10;Needs deleting user and comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/styl.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/styl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/races.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/races.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts_php/changeLogout.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/changeLogout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/adminPageComments.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/adminPageComments.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/adminPageUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/adminPageUsers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/profileChangeData.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/profileChangeData.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +112,7 @@
       <workItem from="1609694214367" duration="1515000" />
       <workItem from="1610713962235" duration="18964000" />
       <workItem from="1610807372770" duration="20288000" />
-      <workItem from="1610887124082" duration="7832000" />
+      <workItem from="1610887124082" duration="13496000" />
     </task>
     <task id="LOCAL-00001" summary="Responsivita na 80%">
       <created>1602780198899</created>
@@ -290,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610835844868</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Admin&#10;Needs deleting user and comments">
+      <created>1610895781606</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1610895781606</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +340,8 @@
     <MESSAGE value="Pagination&#10;Responsivity" />
     <MESSAGE value="Responstivity" />
     <MESSAGE value="User comments&#10;Responstivity" />
-    <option name="LAST_COMMIT_MESSAGE" value="User comments&#10;Responstivity" />
+    <MESSAGE value="Admin&#10;Needs deleting user and comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin&#10;Needs deleting user and comments" />
   </component>
   <component name="WindowStateProjectService">
     <state x="987" y="343" key="#PHP" timestamp="1605447380485">
@@ -377,10 +384,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="330" height="441" key="SqlResolveConfigurable/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610734844821" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1610835849166">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1610895782900">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610835849166" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610895782900" />
     <state x="1179" y="577" width="573" height="532" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605448723112">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

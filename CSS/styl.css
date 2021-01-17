@@ -516,6 +516,8 @@ ul.pagination li a {
 .commentSection .commentMessage{
     border: 3px solid black;
     background-color: ivory;
+    word-wrap: break-word;
+    word-break: break-all;
 
 }
 .commentSection .commentUser{
@@ -523,7 +525,8 @@ ul.pagination li a {
     border: 2px solid black;
     width: fit-content;
     background-color: gold;
-
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .form-group .btn-info{
