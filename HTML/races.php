@@ -10,7 +10,7 @@ include_once '../Scripts_php/DBConnector.php';
 
     <div class="page_content" >
 
-        <div id="load-Data">
+        <div class="load-Data" id="load-Data">
         <h1></h1>
         <div class="obal_rasy">
             <div class="obal_textu">
@@ -65,7 +65,7 @@ include_once '../Scripts_php/DBConnector.php';
 
             </form>
             <div class="form-group">
-                <input type="submit" name="show" id="show" class="btn btn-info" value="Show" />
+                <input type="submit" name="show" id="show" class="btn btn-show" value="Show" />
             </div>
             <div class="commentSection" id="commentSection">
 
@@ -84,9 +84,9 @@ include_once '../Scripts_php/DBConnector.php';
             ?>
              <div>
 
-                 <h4> <?php echo $row['username']; ?> </h4>
-                 <p>  <?php echo $row['commentContent']; ?> </p>
-                 <p>  <?php echo $row['date']; ?> </p>
+                 <h4 class="commentUser" id="commentUser" style="text-align: left">User: <?php echo $row['username']; ?> </h4>
+                 <p class="commentMessage" id="commentMessage" style="text-align: left; margin: auto">  <?php echo $row['commentContent']; ?> </p>
+                 <p style="text-align: right">  <?php echo $row['date']; ?> </p>
 
              </div>
             <?php
