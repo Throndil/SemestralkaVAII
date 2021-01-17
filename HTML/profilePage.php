@@ -46,10 +46,10 @@ include_once '../Scripts_php/header.php';
 
 
             <a class="deleteUserButton" href="deleteUser.php" >
-                <button>Delete your account</button>
-            </a>
+                Delete your account
+            </a><br>
             <a class="changeUserDataButton" href="profileChangeData.php" style="text-decoration: none ">
-                <button>Change your profile data</button>
+                Change your profile data
             </a>
 
         </div>

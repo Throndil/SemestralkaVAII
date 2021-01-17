@@ -11,23 +11,9 @@ include_once '../Scripts_php/DBConnector.php';
     <div class="page_content" >
 
         <div class="load-Data" id="load-Data">
-        <h1></h1>
-        <div class="obal_rasy">
-            <div class="obal_textu">
-
-                <p>
 
 
-                </p>
-
-
-            </div>
-            <div class="obal_textu obal_obrazku"><img class="races_obrazky" src=""
-                                                      alt="imperium_of_man" title="imperium_of_man"></div>
-
-        </div>
-
-        <script type="text/javascript">
+        <script>
             $(document).ready(function(){
                 function loadData(page){
                     $.ajax({
@@ -69,34 +55,6 @@ include_once '../Scripts_php/DBConnector.php';
             </div>
             <div class="commentSection" id="commentSection">
 
-            <?php
-
-            $query = "SELECT * FROM postcomment JOIN users u on postcomment.userID = u.userID";
-
-            $result = mysqli_query($conn, $query);
-
-            if (mysqli_num_rows($result) > 0) {
-
-             while ($row = mysqli_fetch_assoc($result)):
-
-
-
-            ?>
-             <div>
-
-                 <h4 class="commentUser" id="commentUser" style="text-align: left">User: <?php echo $row['username']; ?> </h4>
-                 <p class="commentMessage" id="commentMessage" style="text-align: left; margin: auto">  <?php echo $row['commentContent']; ?> </p>
-                 <p style="text-align: right">  <?php echo $row['date']; ?> </p>
-
-             </div>
-            <?php
-
-
-
-            endwhile;
-            }
-
-            ?>
 
 
             </div>
@@ -114,26 +72,37 @@ include_once '../Scripts_php/DBConnector.php';
 include_once '../Scripts_php/footer.php';
 ?>
 
+<script>
+
+  //  $(document).ready(function (){
+
+       // $("#show").click(function (){
+
+          //  $("#commentSection").toggle();
+
+
+     //   });
+
+  //  })
+
+  $(document).ready(function ()
+  {
+     var commentCount = 0;
+      $("#show").click(function (){
+        commentCount = commentCount + 2;
+          $("#commentSection").load("../Scripts_php/commentLoader.php", {
+              commentLimiter: commentCount
+
+          });
+      });
+
+  });
+
+
+</script>
 
 </body>
 
 
 </html>
 
-<script>
-
-    $(document).ready(function (){
-
-        $("#show").click(function (){
-
-            $("#commentSection").toggle();
-
-
-        });
-
-    })
-
-
-
-
-</script>

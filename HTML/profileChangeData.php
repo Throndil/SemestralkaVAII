@@ -39,35 +39,10 @@ include_once '../Scripts_php/header.php';
                 <label for="newEmail">New email:</label><br>
                 <input class="changeEmailField" type="text" id="newEmail" name="newEmail"><br>
 
-                <script>
 
-                    function autoGrow (oField) {
-                        if (oField.scrollHeight > oField.clientHeight) {
-                            oField.style.height = oField.scrollHeight + "px";
-                        }
-                    }
-
-                    let el = document.querySelector(".input-wrap .input");
-                    let widthMachine = document.querySelector(".input-wrap .width-machine");
-                    el.addEventListener("keyup", () => {
-                        widthMachine.innerHTML = el.value;
-                    });
-
-
-                    function calcHeight(value) {
-                        let numberOfLineBreaks = (value.match(/\n/g) || []).length;
-                        let newHeight = 20 + numberOfLineBreaks * 20 + 12 + 2;
-                        return newHeight;
-                    }
-
-                    let textarea = document.querySelector(".resize-ta");
-                    textarea.addEventListener("keyup", () => {
-                        textarea.style.height = calcHeight(textarea.value) + "px";
-                    });
-                </script>
 
                 <label for="newProfileText">New profile bio:</label><br>
-                <p><textarea class="textarea resize-ta" onkeyup="autoGrow(this);" maxlength="2000" type="text" id="newProfileText" name="newProfileText" style="border:solid 3px green;"></textarea></p>
+                <p><textarea class="textarea resize-ta" onkeyup="autoGrow(this);" maxlength="2000" id="newProfileText" name="newProfileText" style="border:solid 3px green;"></textarea></p>
 
 
                 <input class="changeProfileDataButton" type="submit" name="changeProfile" value="Change">
@@ -100,7 +75,7 @@ include_once '../Scripts_php/header.php';
 
 
             </form>
-            </p>
+
 
 
     </div>
@@ -111,4 +86,33 @@ include_once '../Scripts_php/header.php';
 include_once '../Scripts_php/footer.php';
 ?>
 
+
+<script>
+
+    function autoGrow (oField) {
+        if (oField.scrollHeight > oField.clientHeight) {
+            oField.style.height = oField.scrollHeight + "px";
+        }
+    }
+
+    let el = document.querySelector(".input-wrap .input");
+    let widthMachine = document.querySelector(".input-wrap .width-machine");
+    el.addEventListener("keyup", () => {
+        widthMachine.innerHTML = el.value;
+    });
+
+
+    function calcHeight(value) {
+        let numberOfLineBreaks = (value.match(/\n/g) || []).length;
+        let newHeight = 20 + numberOfLineBreaks * 20 + 12 + 2;
+        return newHeight;
+    }
+
+    let textarea = document.querySelector(".resize-ta");
+    textarea.addEventListener("keyup", () => {
+        textarea.style.height = calcHeight(textarea.value) + "px";
+    });
+</script>
+
 </html>
+

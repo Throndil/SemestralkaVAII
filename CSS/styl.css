@@ -173,8 +173,9 @@ header .activepage {
 /*</editor-fold>*/
 
 /*<editor-fold desc="Tlacidlo delete ucet ">*/
-.page_content_profile_right .deleteUserButton button {
+.page_content_profile_right .deleteUserButton {
 
+    color: black;
     border-radius: 12px;
     overflow: hidden;
     width: 80%;
@@ -183,28 +184,16 @@ header .activepage {
 }
 /*</editor-fold>*/
 
-/*<editor-fold desc="Delete button on hover">*/
-.page_content_profile_right .deleteUserButton button:hover {
-
-
-    font-size: 24px;
-}
-/*</editor-fold>*/
 /*<editor-fold desc="Change user data button">*/
-.page_content_profile_right .changeUserDataButton button {
+.page_content_profile_right .changeUserDataButton  {
+    color: black;
     border-radius: 12px;
     overflow: hidden;
     width: 80%;
     background-color: #73AD21;
 }
 /*</editor-fold>*/
-/*<editor-fold desc="Change user data button on hover">*/
-.page_content_profile_right .changeUserDataButton button:hover {
 
-    background-color: #73AD21;
-    font-size: 24px;
-}
-/*</editor-fold>*/
 
 /*<editor-fold desc="Signup fields">*/
 .page_content .signupField{
@@ -484,8 +473,8 @@ header li a {
     position: fixed;
     text-align: right;
     width: 100%;
-    left:0px;
-    bottom:0px;
+    left:0;
+    bottom:0;
     height:30px;
     margin-top: -100px;
 

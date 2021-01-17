@@ -19,13 +19,6 @@ include '../Scripts_php/DBConnector.php'
 
             $result = mysqli_query($conn, $query);
 
-            ?>
-
-            <div>
-                <p style="text-align: left">Current number of comments <?php echo mysqli_num_rows($result); ?> </p>
-            </div>
-
-            <?php
 
             if (mysqli_num_rows($result) > 0) {
 
@@ -35,12 +28,12 @@ include '../Scripts_php/DBConnector.php'
 
                     ?>
                     <div>
-                        <h3 class="commentUser" id="commentUser" style="text-align: left">CommentID:<?php echo $row['commentID']; ?> </h3>
-                        <h4 class="commentUser" id="commentUser" style="text-align: left">User: <?php echo $row['username']; ?> </h4>
-                        <p class="commentMessage" id="commentMessage" style="text-align: left; margin: auto">  <?php echo $row['commentContent']; ?> </p>
+                        <h3 class="commentUser" style="text-align: left">CommentID:<?php echo $row['commentID']; ?> </h3>
+                        <h4 class="commentUser" style="text-align: left">User: <?php echo $row['username']; ?> </h4>
+                        <p class="commentMessage" style="text-align: left; margin: auto">  <?php echo $row['commentContent']; ?> </p>
                         <p style="text-align: right">  <?php echo $row['date']; ?> </p>
                         <div class="form-group">
-                            <input style="font-size: 16px" type="submit" name="deleteComment" id="deleteComment" class="btn btn-info" value="Delete" />
+                            <input style="font-size: 16px" type="submit" name="deleteComment" class="btn btn-info deleteComment" data-id="<?php echo $row['commentID'];?>" value="Delete <?php echo $row['commentID']; ?>" />
                         </div>
                     </div>
                 <?php
@@ -65,12 +58,6 @@ include_once '../Scripts_php/footer.php';
 ?>
 
 
-</body>
-
-
-</html>
-
-
 <script>
 
     $(document).ready(function (){
@@ -84,7 +71,43 @@ include_once '../Scripts_php/footer.php';
 
     })
 
+    $(document).ready(function(){
 
+        $('.deleteComment').click(function(){
+
+            var deleteid = $(this).data('id');
+            var deleteThis = $(this);
+
+            var confirmalert = confirm("Are you sure?");
+            if (confirmalert == true) {
+
+                $.ajax({
+                    url: '../Scripts_php/deleteComments.php',
+                    type: 'POST',
+                    data: { id:deleteid },
+                    success: function(response){
+
+                        if(response !== 0){
+
+                            deleteThis.parent().parent().remove();
+
+                        }else{
+                            alert('Invalid ID.');
+                        }
+
+                    }
+                });
+            }
+
+        });
+
+    });
 
 
 </script>
+
+</body>
+
+
+</html>
+

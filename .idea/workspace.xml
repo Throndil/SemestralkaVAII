@@ -23,11 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Admin&#10;Needs deleting user and comments">
+      <change afterPath="$PROJECT_DIR$/Scripts_php/commentLoader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scripts_php/deleteComments.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scripts_php/deleteUsers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/styl.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/styl.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/adminPageComments.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/adminPageComments.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/adminPageUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/adminPageUsers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/profileChangeData.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/profileChangeData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/profilePage.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/profilePage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/races.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/races.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +117,7 @@
       <workItem from="1609694214367" duration="1515000" />
       <workItem from="1610713962235" duration="18964000" />
       <workItem from="1610807372770" duration="20288000" />
-      <workItem from="1610887124082" duration="13496000" />
+      <workItem from="1610887124082" duration="31910000" />
     </task>
     <task id="LOCAL-00001" summary="Responsivita na 80%">
       <created>1602780198899</created>
@@ -296,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610895781606</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Admin&#10;Needs deleting user and comments">
+      <created>1610904063984</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1610904063984</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,10 +384,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1068" y="405" key="Github.UntrackedFilesDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1602432611234" />
-    <state x="1114" y="623" key="NewPhpFileDialog" timestamp="1610892743798">
+    <state x="1114" y="623" key="NewPhpFileDialog" timestamp="1610921369487">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1114" y="623" key="NewPhpFileDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610892743798" />
+    <state x="1114" y="623" key="NewPhpFileDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610921369487" />
     <state x="960" y="282" key="SettingsEditor" timestamp="1610734845604">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -384,10 +396,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="330" height="441" key="SqlResolveConfigurable/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610734844821" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1610895782900">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1610904065343">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610895782900" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610904065343" />
     <state x="1179" y="577" width="573" height="532" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605448723112">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
