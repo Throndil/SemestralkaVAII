@@ -1,4 +1,10 @@
 <?php
+if ($_POST['username'] !== 'adminadmin'){
+
+    header("Location: index.php");
+    exit;
+
+}
 include_once '../Scripts_php/header.php';
 ?>
 

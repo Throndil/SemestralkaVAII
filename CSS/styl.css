@@ -738,6 +738,12 @@ ul.pagination li a {
         margin-left: 4em;
     }
 
+    .page_content_profile_right .deleteUserButton{
+        object-fit: contain;
+        text-wrap: normal;
+        word-break: break-all;
+    }
+
 }
 /*</editor-fold>*/
 
