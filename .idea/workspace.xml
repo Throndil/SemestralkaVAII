@@ -24,10 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Users who are not admin cannot access admin panel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/adminPageComments.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/adminPageComments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/adminPageUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/adminPageUsers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/adminSeeLogs.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/adminSeeLogs.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/adminWriteLog.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/adminWriteLog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts_php/Functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/Functions.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +112,7 @@
       <workItem from="1610713962235" duration="18964000" />
       <workItem from="1610807372770" duration="20288000" />
       <workItem from="1610887124082" duration="34666000" />
-      <workItem from="1610967241935" duration="18000000" />
+      <workItem from="1610967241935" duration="19954000" />
     </task>
     <task id="LOCAL-00001" summary="Responsivita na 80%">
       <created>1602780198899</created>
@@ -348,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610987580120</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Users who are not admin cannot access admin panel">
+      <created>1610987893122</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1610987893122</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,10 +444,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="330" height="441" key="SqlResolveConfigurable/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610734844821" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1610987581290">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1610987894134">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610987581290" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610987894134" />
     <state x="1179" y="577" width="573" height="532" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605448723112">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

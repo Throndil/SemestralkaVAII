@@ -399,6 +399,20 @@ function changeUserData($conn, $userID, $newFirstname, $newLastName, $newUname, 
 function deleteAccount($conn, $userID)
 {
 
+
+    $queryComments = "DELETE FROM postcomment WHERE userID = ? ";
+
+    if (($statement = mysqli_prepare($conn, $queryComments)) === false) {
+
+        header("location: ../HTML/profilePage.php?badstatement");
+        exit();
+
+    }
+
+    mysqli_stmt_bind_param($statement, "s",$userID);
+    mysqli_stmt_execute($statement);
+    mysqli_stmt_close($statement);
+
     $sql = "DELETE FROM users WHERE userID = ? ;";
 
 
@@ -408,6 +422,7 @@ function deleteAccount($conn, $userID)
         exit();
 
     }
+
     mysqli_stmt_bind_param($statement, "s", $userID);
     mysqli_stmt_execute($statement);
     mysqli_stmt_close($statement);
