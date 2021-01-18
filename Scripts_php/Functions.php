@@ -137,7 +137,6 @@ function createUser($conn, $uname, $email, $passwd)
 
 
     mysqli_stmt_bind_param($statement, "sss", $uname, $email, $hashedPwd);
-
     mysqli_stmt_execute($statement);
     mysqli_stmt_close($statement);
 

@@ -22,14 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Admin done&#10;Deleting user and comments&#10;Show more comments&#10;All validated">
-      <change afterPath="$PROJECT_DIR$/HTML/adminSeeLogs.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML/adminWriteLog.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts_php/addLog.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts_php/deleteLog.php" afterDir="false" />
+    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Log table&#10;Admin see logs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts_php/changeLogout.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/changeLogout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts_php/commentLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/commentLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/adminPageUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/adminPageUsers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/adminSeeLogs.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/adminSeeLogs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/adminWriteLog.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/adminWriteLog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts_php/Functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/Functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts_php/addComment.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/addComment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts_php/addLog.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/addLog.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,20 +64,22 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Scripts_php/vypisZDBPost.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/User_HTML" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="SQL Resolution Scopes" />
     <property name="sql.rename.search.for.storage.occurrences" value="true" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Michael\PhpstormProjects\Semestralka VAII" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Michael\Desktop\php_mysql\www\SemestralkaVAII\User_HTML" />
+      <recent name="C:\Users\Michael\Desktop\php_mysql\www\SemestralkaVAII\Admin_HTML" />
       <recent name="C:\Users\Michael\PhpstormProjects\Semestralka VAII\CSS" />
       <recent name="C:\Users\Michael\PhpstormProjects\Semestralka VAII\HTML" />
       <recent name="C:\Users\Michael\PhpstormProjects\Semestralka VAII\IMGS" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Michael\PhpstormProjects\Semestralka VAII" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -115,7 +117,7 @@
       <workItem from="1610713962235" duration="18964000" />
       <workItem from="1610807372770" duration="20288000" />
       <workItem from="1610887124082" duration="34666000" />
-      <workItem from="1610967241935" duration="4381000" />
+      <workItem from="1610967241935" duration="8943000" />
     </task>
     <task id="LOCAL-00001" summary="Responsivita na 80%">
       <created>1602780198899</created>
@@ -313,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610923541527</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Log table&#10;Admin see logs">
+      <created>1610971711791</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1610971711791</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,7 +342,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Responsivita by mala byt na 100%" />
     <MESSAGE value="Responsivita + male drobnosti" />
     <MESSAGE value="Added chaos race" />
     <MESSAGE value="Etc" />
@@ -358,7 +366,8 @@
     <MESSAGE value="User comments&#10;Responstivity" />
     <MESSAGE value="Admin&#10;Needs deleting user and comments" />
     <MESSAGE value="Admin done&#10;Deleting user and comments&#10;Show more comments&#10;All validated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Admin done&#10;Deleting user and comments&#10;Show more comments&#10;All validated" />
+    <MESSAGE value="Log table&#10;Admin see logs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Log table&#10;Admin see logs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="987" y="343" key="#PHP" timestamp="1605447380485">
@@ -373,14 +382,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="872" y="358" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605456655587" />
+    <state x="1048" y="524" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610973500884">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1048" y="524" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610973500884" />
     <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605448009245">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605448009245" />
-    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1610734657066">
+    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1610973640435">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610734657066" />
+    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610973640435" />
     <state x="1142" y="598" key="Github.ShareDialog" timestamp="1602432605672">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -401,10 +414,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="330" height="441" key="SqlResolveConfigurable/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610734844821" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1610923542925">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1610971740340">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610923542925" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610971740340" />
     <state x="1179" y="577" width="573" height="532" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605448723112">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

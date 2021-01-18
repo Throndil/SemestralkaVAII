@@ -12,8 +12,13 @@ if (isset($_POST['submit']))
     if (!empty($commentContent))
     {
 
-    $query = "INSERT INTO postcomment (commentContent, date, userID) VALUES ('$commentContent','$date','$userID')";
-    mysqli_query($conn,$query);
+    $query = "INSERT INTO postcomment (commentContent, date, userID) VALUES ( ? , ? , ?)";
+    //mysqli_query($conn,$query);
+
+    $statement = mysqli_prepare($conn, $query);
+    mysqli_stmt_bind_param($statement, "sss",$commentContent,$date , $userID);
+    mysqli_stmt_execute($statement);
+    mysqli_stmt_close($statement);
 
     header("Location: ../HTML/races.php");
     exit();

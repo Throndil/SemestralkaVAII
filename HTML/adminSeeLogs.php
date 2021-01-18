@@ -7,7 +7,7 @@ include '../Scripts_php/DBConnector.php'
 
     <div class="page_content">
         <div class="form-group">
-            <input type="submit" name="show" id="show" class="btn btn-show" value="Show all comments" />
+            <input type="submit" name="show" id="show" class="btn btn-show" value="Show all logs" />
         </div>
 
         <div class="commentSection" id="commentSection">
@@ -28,10 +28,10 @@ include '../Scripts_php/DBConnector.php'
 
                     ?>
                     <div>
-                        <h3 class="commentUser" style="text-align: left">LogID:<?php echo $row['logID']; ?> </h3>
+                        <h3 class="commentUser" style="text-align: left; background-color: red">LogID:<?php echo $row['logID']; ?> </h3>
                         <h4 class="commentUser" style="text-align: left">User: <?php echo $row['userID']; ?> </h4>
                         <p class="commentMessage" style="text-align: left; margin: auto">  <?php echo $row['logContent']; ?> </p>
-                        <p style="text-align: right">  <?php echo $row['logDate']; ?> </p>
+                        <p style="text-align: center">  <?php echo $row['logDate']; ?> </p>
                         <div class="form-group">
                             <input style="font-size: 16px" type="submit" name="deleteComment" class="btn btn-info deleteComment" data-id="<?php echo $row['logID'];?>" value="Delete <?php echo $row['logID']; ?>" />
                         </div>

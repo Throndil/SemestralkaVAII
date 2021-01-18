@@ -14,7 +14,7 @@ include_once '../Scripts_php/header.php';
             <div class="form-group">
                 <input type="hidden" name="userID" id="userID" class="form-control" value="<?php echo $_SESSION['userID'] ?>" />
             </div>
-            <label for="newProfileText">New log:</label><br>
+            <label>New log:</label><br>
             <p><textarea class="textarea resize-ta" onkeyup="autoGrow(this);" maxlength="2000" id="newLog" name="newLog" style="border:solid 3px green;"></textarea></p>
 
             <input class="changeProfileDataButton" type="submit" name="submit" id="submit" value="Send">

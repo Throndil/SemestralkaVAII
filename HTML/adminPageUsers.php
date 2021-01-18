@@ -41,10 +41,10 @@ include '../Scripts_php/DBConnector.php'
                     ?>
 
                     <div >
-                        <h3 class="commentUser" style="text-align: left">UserID:<?php echo $row['userID']; ?> </h3>
+                        <h3 class="commentUser" style="text-align: left; background-color: aqua">UserID:<?php echo $row['userID']; ?> </h3>
                         <h4 class="commentUser" style="text-align: left">User: <?php echo $row['username']; ?> </h4>
                         <p class="commentMessage" style="text-align: left; margin: auto">  <?php echo $row['email']; ?> </p>
-                        <p style="text-align: left">  <?php echo $row['fullName']; ?> </p>
+                        <p style="text-align: left; background-color: #4CAF50; width: fit-content;border: 1px solid blue;">Name:  <?php echo $row['fullName']; ?> </p>
                         <div class="form-group">
                             <input style="font-size: 16px" type="submit" name="deleteUser" class="btn btn-info deleteUser" data-id="<?php echo $row['userID'];?>" value="Delete <?php echo $row['username']; ?>" />
                         </div>
