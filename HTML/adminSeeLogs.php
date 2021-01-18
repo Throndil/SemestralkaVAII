@@ -44,7 +44,7 @@ include '../Scripts_php/DBConnector.php'
             }
 
             ?>
-
+            <button onclick="topFunction()" id="topButton" title="top">Top</button>
 
         </div>
 
@@ -103,6 +103,22 @@ include_once '../Scripts_php/footer.php';
 
     });
 
+
+    button = document.getElementById("topButton");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.documentElement.scrollTop = 0;
+    }
 
 </script>
 
