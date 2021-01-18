@@ -47,10 +47,10 @@ include_once '../Scripts_php/footer.php';
         }
     }
 
-    let el = document.querySelector(".input-wrap .input");
-    let widthMachine = document.querySelector(".input-wrap .width-machine");
-    el.addEventListener("keyup", () => {
-        widthMachine.innerHTML = el.value;
+    let element = document.querySelector(".input-wrap .input");
+    let widthChanger = document.querySelector(".input-wrap .width-Changer");
+    element.addEventListener("keyup", () => {
+        widthChanger.innerHTML = element.value;
     });
 
 

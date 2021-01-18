@@ -7,7 +7,7 @@ if(isset($_POST['id'])){
 }
 if($id > 0){
 
-    // Check record exists
+
    $checkRecord = mysqli_query($conn,"SELECT * FROM users WHERE userID='$id'");
 
 
