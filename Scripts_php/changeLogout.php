@@ -7,7 +7,9 @@ if (isset($_SESSION["userID"]) && $_SESSION["username"] == "adminadmin") {
     echo '<li class="adminPageMenu"><a >Admin page</a>
     <ul class="adminVyber">    
         <li ><a  href="../HTML/adminPageUsers.php">Users</a></li>    
-        <li ><a  href="../HTML/adminPageComments.php">Comments</a></li>      
+        <li ><a  href="../HTML/adminPageComments.php">Comments</a></li>    
+        <li ><a  href="../HTML/adminWriteLog.php">Write log</a></li>   
+        <li ><a  href="../HTML/adminSeeLogs.php">Logs</a></li>
     </ul> </li>';
     echo '<li><a href="../Scripts_php/logout_script.php">Logout</a></li>';
 

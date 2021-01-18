@@ -22,17 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Admin&#10;Needs deleting user and comments">
-      <change afterPath="$PROJECT_DIR$/Scripts_php/commentLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts_php/deleteComments.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts_php/deleteUsers.php" afterDir="false" />
+    <list default="true" id="7712138a-570b-4e2e-873f-c7c4039f7f44" name="Default Changelist" comment="Admin done&#10;Deleting user and comments&#10;Show more comments&#10;All validated">
+      <change afterPath="$PROJECT_DIR$/HTML/adminSeeLogs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/adminWriteLog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scripts_php/addLog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scripts_php/deleteLog.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/styl.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/styl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/adminPageComments.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/adminPageComments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/adminPageUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/adminPageUsers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/profileChangeData.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/profileChangeData.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/profilePage.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/profilePage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/races.php" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/races.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts_php/changeLogout.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/changeLogout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts_php/commentLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts_php/commentLoader.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +114,8 @@
       <workItem from="1609694214367" duration="1515000" />
       <workItem from="1610713962235" duration="18964000" />
       <workItem from="1610807372770" duration="20288000" />
-      <workItem from="1610887124082" duration="31910000" />
+      <workItem from="1610887124082" duration="34666000" />
+      <workItem from="1610967241935" duration="4381000" />
     </task>
     <task id="LOCAL-00001" summary="Responsivita na 80%">
       <created>1602780198899</created>
@@ -308,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610904063984</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Admin done&#10;Deleting user and comments&#10;Show more comments&#10;All validated">
+      <created>1610923541527</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1610923541527</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +333,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Responsivita na 80%" />
     <MESSAGE value="Responsivita by mala byt na 100%" />
     <MESSAGE value="Responsivita + male drobnosti" />
     <MESSAGE value="Added chaos race" />
@@ -353,7 +357,8 @@
     <MESSAGE value="Responstivity" />
     <MESSAGE value="User comments&#10;Responstivity" />
     <MESSAGE value="Admin&#10;Needs deleting user and comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Admin&#10;Needs deleting user and comments" />
+    <MESSAGE value="Admin done&#10;Deleting user and comments&#10;Show more comments&#10;All validated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin done&#10;Deleting user and comments&#10;Show more comments&#10;All validated" />
   </component>
   <component name="WindowStateProjectService">
     <state x="987" y="343" key="#PHP" timestamp="1605447380485">
@@ -384,10 +389,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1068" y="405" key="Github.UntrackedFilesDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1602432611234" />
-    <state x="1114" y="623" key="NewPhpFileDialog" timestamp="1610921369487">
+    <state x="1114" y="623" key="NewPhpFileDialog" timestamp="1610971427222">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1114" y="623" key="NewPhpFileDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610921369487" />
+    <state x="1114" y="623" key="NewPhpFileDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610971427222" />
     <state x="960" y="282" key="SettingsEditor" timestamp="1610734845604">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -396,10 +401,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="330" height="441" key="SqlResolveConfigurable/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610734844821" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1610904065343">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1610923542925">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610904065343" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610923542925" />
     <state x="1179" y="577" width="573" height="532" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605448723112">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -408,14 +413,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1158" y="587" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1605448713708" />
-    <state x="1716" y="520" width="408" height="347" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1610822458840">
+    <state x="1716" y="520" width="408" height="343" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1610970755717">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1716" y="520" width="408" height="347" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610822458840" />
-    <state x="1027" y="410" width="895" height="780" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1610822070332">
+    <state x="1716" y="520" width="408" height="343" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610970755717" />
+    <state x="1027" y="410" width="895" height="780" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1610970854194">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1027" y="410" width="895" height="780" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610822070332" />
+    <state x="1027" y="410" width="895" height="780" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1610970854194" />
     <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603661304362">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

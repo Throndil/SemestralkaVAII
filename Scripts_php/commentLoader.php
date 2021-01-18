@@ -27,9 +27,9 @@ if (mysqli_num_rows($result) > 0) {
 
     endwhile;
 }else {
-    echo "<p>";
+
     echo "There are no more comments";
-    echo "<p>";
+    
 }
 
 ?>
