@@ -1,6 +1,13 @@
 <?php
 
 
+/**
+ * @param $uname
+ * @param $email
+ * @param $passwd
+ * @param $passwdRepeat
+ * @return bool
+ */
 function emptyInputSignup($uname, $email, $passwd, $passwdRepeat)
 {
 
@@ -18,6 +25,10 @@ function emptyInputSignup($uname, $email, $passwd, $passwdRepeat)
     return $result;
 }
 
+/**
+ * @param $uname
+ * @return bool
+ */
 function invalidUname($uname)
 {
 
@@ -35,6 +46,10 @@ function invalidUname($uname)
     return $result;
 }
 
+/**
+ * @param $email
+ * @return bool
+ */
 function invalidEmail($email)
 {
 
@@ -52,6 +67,11 @@ function invalidEmail($email)
     return $result;
 }
 
+/**
+ * @param $passwd
+ * @param $passwdRepeat
+ * @return bool
+ */
 function passwdMatch($passwd, $passwdRepeat)
 {
 
@@ -69,6 +89,12 @@ function passwdMatch($passwd, $passwdRepeat)
     return $result;
 }
 
+/**
+ * @param $conn
+ * @param $uname
+ * @param $email
+ * @return false|string[]|null
+ */
 function unameExists($conn, $uname, $email)
 {
 
@@ -115,6 +141,12 @@ function unameExists($conn, $uname, $email)
 
 }
 
+/**
+ * @param $conn
+ * @param $uname
+ * @param $email
+ * @param $passwd
+ */
 function createUser($conn, $uname, $email, $passwd)
 {
 
@@ -144,6 +176,11 @@ function createUser($conn, $uname, $email, $passwd)
     exit();
 }
 
+/**
+ * @param $uname
+ * @param $passwd
+ * @return bool
+ */
 function emptyInputLogin($uname, $passwd)
 {
 
@@ -160,6 +197,11 @@ function emptyInputLogin($uname, $passwd)
     return $result;
 }
 
+/**
+ * @param $conn
+ * @param $uname
+ * @param $passwd
+ */
 function loginUser($conn, $uname, $passwd)
 {
 
@@ -187,6 +229,12 @@ function loginUser($conn, $uname, $passwd)
     }
 }
 
+/**
+ * @param $conn
+ * @param $fullName
+ * @param $uname
+ * @return bool
+ */
 function fullNameExists($conn, $fullName, $uname)
 {
 
@@ -218,7 +266,16 @@ function fullNameExists($conn, $fullName, $uname)
 
 }
 
-function changeUserData($conn, $userID, $newFirstname, $newLastName, $newUname, $newEmail,$newProfileText)
+/**
+ * @param $conn
+ * @param $userID
+ * @param $newFirstname
+ * @param $newLastName
+ * @param $newUname
+ * @param $newEmail
+ * @param $newProfileText
+ */
+function changeUserData($conn, $userID, $newFirstname, $newLastName, $newUname, $newEmail, $newProfileText)
 {
 
     if (!empty($newFirstname) && !empty($newLastName)) {
@@ -335,6 +392,10 @@ function changeUserData($conn, $userID, $newFirstname, $newLastName, $newUname, 
 
 }
 
+/**
+ * @param $conn
+ * @param $userID
+ */
 function deleteAccount($conn, $userID)
 {
 
