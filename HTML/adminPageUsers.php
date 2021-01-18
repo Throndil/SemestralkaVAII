@@ -1,12 +1,12 @@
 <?php
-if ($_POST['username'] !== 'adminadmin'){
+include_once '../Scripts_php/header.php';
+include '../Scripts_php/DBConnector.php';
+if ($_SESSION["username"] != "adminadmin"){
 
     header("Location: index.php");
     exit;
 
 }
-include_once '../Scripts_php/header.php';
-include '../Scripts_php/DBConnector.php'
 ?>
 
 <div class="kontajner">

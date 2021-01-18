@@ -1,11 +1,11 @@
 <?php
-if ($_POST['username'] !== 'adminadmin'){
+include_once '../Scripts_php/header.php';
+if ($_SESSION["username"] != "adminadmin"){
 
     header("Location: index.php");
     exit;
 
 }
-include_once '../Scripts_php/header.php';
 ?>
 
 <div class="kontajner_profile_page">
